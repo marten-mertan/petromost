@@ -66,6 +66,11 @@ function copyOldScripts() {
     .pipe(dest('docs/scripts_old/'));
 }
 
+function copyBitrix() {
+  return src('src/bitrix/**/*.*')
+    .pipe(dest('docs/bitrix/'));
+}
+
 function copyAPI() {
   return src('src/scripts/api.js')
     .pipe(dest('docs/scripts/'));
@@ -105,7 +110,7 @@ exports.default =
     parallel(
       devServer,
       series(
-        parallel(buildPages, buildStyles, buildScripts, buildVendorScripts, copyOldStyles, copyOldScripts, copyAPI, buildAssets),
+        parallel(buildPages, buildStyles, buildScripts, buildVendorScripts, copyOldStyles, copyOldScripts, copyBitrix, copyAPI, buildAssets),
         watchFiles
       )
     )
