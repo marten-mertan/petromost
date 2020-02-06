@@ -1,5 +1,9 @@
 @import '../components/**/*.scss';
 
+::-webkit-scrollbar { /* for Mac OS X support */
+    width: 0;
+}
+
 .header {
     background: none;
     @media screen and (max-width: 1170px){
@@ -99,7 +103,7 @@
     &__search{
         @media screen and (min-width: 721px){
             width: 82% !important;
-            z-index: 2;
+            z-index: 15;
             top: auto;
             bottom: 8px;
             left: 0;
@@ -123,7 +127,7 @@
         top: 214px;
         background-color: #ececec;
         box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.28);
-        z-index: 1;
+        z-index: 12;
         @media screen and (max-width: 1170px){
             top: 274px;
         }
@@ -147,11 +151,15 @@
             
         }
         &-cart{
+            position: relative;
             color: white;
             padding: 15px 9px 15px 19px;
             background-color: #de2d42;
             cursor: pointer;
             &:hover{
+                background-color: #5ab55e;
+            }
+            &.active{
                 background-color: #5ab55e;
             }
             a{
@@ -172,6 +180,96 @@
                     left: -37px;
                     background: url(/assets/img/cart.png) no-repeat left;
                 }
+            }
+            &-baloon{
+                position: absolute;
+                display: none;
+                top: 100%;
+                right: 0;
+                background-color: white;
+                font-size: 13px;
+                line-height: 1;
+                color: #303030;
+                padding: 10px 10px 20px 10px;
+                min-width: 540px;
+                border-radius: 4px;
+                box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+                &.active{
+                    display: block;
+                }
+                a{
+                    font-size: 13px;
+                    line-height: 1;
+                    color: #303030;
+                }
+                &-container{
+                    position: relative;
+                }
+                &-row{
+                    &:hover {
+                        background-color: #f3f3f3;
+                    }
+                }
+                &-item{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 10px 0px 12px;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    border-bottom: 1px solid #e3e3e3;
+                    &-delete{
+                        width: 30px;
+                        height: 30px;
+                        padding: 9px;
+                        box-sizing: border-box;
+                        border-radius: 50%;
+                        margin-left: auto;
+                        &:hover{
+                            background-color: #5ab55e;
+                            svg{
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+                &__button{
+                    display: flex;
+                    margin: 20px auto 0;
+                    font-size: 13px;
+                    line-height: 1;
+                    border: none;
+                    cursor: pointer;
+                    overflow: hidden;
+                    outline: none;
+                    padding: 13px 19px;
+                    background-color: #ececec;
+                    border-radius: 20px;
+                    width: 160px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    justify-content: center;
+                }
+                &__img{
+                    background: url(/assets/img/catalog/item.png) 50% 50% no-repeat;
+                    background-color: white;
+                    background-size: contain;
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 10px;
+                }
+                &-info{
+                    &-text{
+                        margin: 0;
+                        &:not(:last-child){
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .mod-red{
+                        color: #de2d42;
+                    }
+                }
+
             }
         }
     }
@@ -331,6 +429,7 @@
 .content__left {
     width: 260px;
     .aside__menu{
+        position: relative;
         margin: 0 0 30px;
         border: none;
         &_ul{
@@ -541,6 +640,7 @@
                 top: 5px;
                 left: 5px;
                 cursor: text;
+                user-select: none;
                 transition: all 0.2s;
             }
             &.street{
@@ -599,8 +699,16 @@
     border-top-right-radius: 16px;
     background-color: white;
     box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
-    padding: 30px 20px 20px;
+    padding: 30px 0 20px;
     z-index: 200;
+    a{
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        &:hover{
+            background-color: #f3f3f3;
+        }
+    }
     &.active{
         display: block;
     }
@@ -608,9 +716,9 @@
         display: flex;
         flex-direction: row;
         padding: 8px 20px 15px;
-        &:not(:last-child){
-            border-bottom: 1px solid #e3e3e3;
-        }
+        margin: 0 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #e3e3e3;
     }
     &__img{
         background: url('/assets/img/catalog/baloon-img.png') 50% 50% no-repeat;
@@ -630,6 +738,7 @@
             font-size: 13px;
             font-style: italic;
             margin-bottom: 7px;
+            color: #444444;
         }
         &__name{
             color: #de2d42;
@@ -641,6 +750,7 @@
             .bold{
                 font-weight: bold;
             }
+            
         }
     }
     &__button{
@@ -661,4 +771,45 @@
         }
     }
     
+}
+.mod-label{
+    padding: 4px 8px;
+    border-radius: 3px;
+    background-color: #de2d42;
+    font-size: 10px;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 12px;
+}
+
+.baron__scroller {
+    padding-right: 20px;
+    max-height: 220px;
+    position: relative;
+}
+ul.baron__scroller {
+    padding-right: 20px;
+    max-height: 800px;
+    position: relative;
+}
+  
+.baron__track {
+    height: 100%;
+    width: 6px;
+    background: #f2f2f2;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    bottom: 0;
+}
+  
+.baron__bar {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    right: 1px;
+    z-index: 1;
+    width: 4px;
+    background: #a0b2bd;
 }
