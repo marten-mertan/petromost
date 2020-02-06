@@ -112,7 +112,8 @@ window.onload = function() {
     });
     $(document).on('click', function(e){
         var element = $('.js-input-change-baloon');
-        if (element.has(e.target).length === 0){
+        var parent = $('.header__search')
+        if (element.has(e.target).length === 0 && parent.has(e.target).length === 0){
             element.removeClass('active');
         }
     });
@@ -153,6 +154,26 @@ window.onload = function() {
         scroller: '.baron__scroller',
         bar: '.baron__bar'
     }).autoUpdate(); 
+
+    $('.js-minus').on('click', function(e){
+        var count = parseInt($(this).siblings('.js-input').val());
+        if (count==1){
+            $(this).parents('.js-good-item').removeClass('in-cart');
+        }
+        if (count > 0){
+            $(this).siblings('.js-input').val(count-1);
+        }
+    });
+    $('.js-plus').on('click', function(e){
+        var count = parseInt($(this).siblings('.js-input').val());
+        var max = parseInt($(this).siblings('.js-input').data('max'));
+        if (count==0){
+            $(this).parents('.js-good-item').addClass('in-cart');
+        }
+        if (count < max){
+            $(this).siblings('.js-input').val(count+1);
+        }
+    });
 
 };
 
