@@ -350,6 +350,26 @@
                 background: url('../assets/img/auth.png') no-repeat right;
             }
         }
+        .baloon-select-city-form__city{
+            border: none;
+            padding: 8px 14px;
+            background-color: #f3f3f3;
+            color: black;
+            margin: 0;
+            &:after{
+                display: none;
+            }
+            &:hover{
+                border: none;
+            }
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            &.active{
+                background-color: #de2d42;
+                color: white;
+            }
+        }
     }
 }
 
@@ -624,6 +644,15 @@
                 border-radius: 15px;
                 transition: all 0.2s;
             }
+        }
+        &__city{
+            font-size: 13px;
+            line-height: 1;
+            padding: 8px 14px;
+            background-color: #de2d42;
+            color: white;
+            border-radius: 15px;
+            transition: all 0.15s;
         }
         &__input{
             position: relative;

@@ -84,5 +84,11 @@ window.onload = function() {
             $(this).siblings('.js-input').val(count+1);
         }
     });
+    $('.js-select-city-link').on('click', function(e){
+        $('.js-select-city-link').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    
 
 };

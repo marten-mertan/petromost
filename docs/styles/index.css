@@ -298,6 +298,21 @@
         right: auto;
         left: -26px;
         background: url("../assets/img/auth.png") no-repeat right; }
+    .selectSite .destop .baloon-select-city-form__city {
+      border: none;
+      padding: 8px 14px;
+      background-color: #f3f3f3;
+      color: black;
+      margin: 0; }
+      .selectSite .destop .baloon-select-city-form__city:after {
+        display: none; }
+      .selectSite .destop .baloon-select-city-form__city:hover {
+        border: none; }
+      .selectSite .destop .baloon-select-city-form__city:not(:last-child) {
+        margin-right: 10px; }
+      .selectSite .destop .baloon-select-city-form__city.active {
+        background-color: #de2d42;
+        color: white; }
 
 .footer {
   background-color: #f3f3f3;
@@ -521,6 +536,15 @@
       border-radius: 15px;
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
+  .baloon-select-city-form__city {
+    font-size: 13px;
+    line-height: 1;
+    padding: 8px 14px;
+    background-color: #de2d42;
+    color: white;
+    border-radius: 15px;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s; }
   .baloon-select-city-form__input {
     position: relative;
     width: 100%; }
