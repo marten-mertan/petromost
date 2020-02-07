@@ -415,6 +415,12 @@
     float: right;
     padding-left: 33px;
     padding-right: 0;
+    @media screen and (max-width: 1170px){
+        overflow: hidden;
+        float: none;
+        width: auto;
+        padding: 0;
+    }
     
 }
 
@@ -428,10 +434,29 @@
 
 .content__left {
     width: 260px;
+    .aside__news{
+        h2{
+            font-size: 13px;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        a{
+            color: black;
+        }
+    }
+    .aside__allnews{
+        top: 0;
+        text-transform: none;
+        font-weight: normal;
+    }
     .aside__menu{
         position: relative;
         margin: 0 0 30px;
         border: none;
+        @media screen and (max-width: 1170px){
+            display: none;
+        }
         &_ul{
             .aside__menu_ul{
                 display: none;
@@ -992,4 +1017,18 @@ ul.baron__scroller {
     .goods__middle-profit{
         display: block;
     }
+}
+
+.catalog__row_filter{
+    margin-top: 13px;
+    margin-bottom: 38px;
+    @media screen and (min-width: 491px){
+        width: 458px;
+        margin-left: auto;
+    }
+    
+}
+
+.catalog__wrp_filter:nth-child(3) {
+    left: 260px;
 }

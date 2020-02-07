@@ -352,6 +352,12 @@
   float: right;
   padding-left: 33px;
   padding-right: 0; }
+  @media screen and (max-width: 1170px) {
+    .content__center {
+      overflow: hidden;
+      float: none;
+      width: auto;
+      padding: 0; } }
 
 @media screen and (max-width: 1170px) {
   .site_container .content__left {
@@ -361,10 +367,24 @@
 
 .content__left {
   width: 260px; }
+  .content__left .aside__news h2 {
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .content__left .aside__news a {
+    color: black; }
+  .content__left .aside__allnews {
+    top: 0;
+    text-transform: none;
+    font-weight: normal; }
   .content__left .aside__menu {
     position: relative;
     margin: 0 0 30px;
     border: none; }
+    @media screen and (max-width: 1170px) {
+      .content__left .aside__menu {
+        display: none; } }
     .content__left .aside__menu_ul .aside__menu_ul {
       display: none;
       padding: 8px 0; }
@@ -854,3 +874,14 @@ ul.baron__scroller {
 
 .in-cart .goods__middle-profit {
   display: block; }
+
+.catalog__row_filter {
+  margin-top: 13px;
+  margin-bottom: 38px; }
+  @media screen and (min-width: 491px) {
+    .catalog__row_filter {
+      width: 458px;
+      margin-left: auto; } }
+
+.catalog__wrp_filter:nth-child(3) {
+  left: 260px; }
