@@ -275,7 +275,7 @@
         top: 0;
         width: 18px;
         height: 20px;
-        background: url(/bitrix/templates/main_adaptive/img/arrowdown.png) no-repeat right; }
+        background: url("../bitrix/templates/main_adaptive/img/arrowdown.png") no-repeat right; }
     .selectSite .destop .selectCity-vk {
       margin-left: 75px;
       font-size: 13px;
