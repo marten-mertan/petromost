@@ -92,7 +92,7 @@
   .header__search_button {
     position: relative;
     z-index: 202;
-    background: url(/assets/img/search.png) no-repeat 40% 50%; }
+    background: url("../assets/img/search.png") no-repeat 40% 50%; }
   .header__bottom {
     position: absolute;
     bottom: 0;
@@ -151,7 +151,7 @@
           height: 23px;
           top: -4px;
           left: -37px;
-          background: url(/assets/img/cart.png) no-repeat left; }
+          background: url("../assets/img/cart.png") no-repeat left; }
       .header__bottom-cart-baloon {
         position: absolute;
         display: none;
@@ -217,7 +217,7 @@
           -webkit-box-pack: center;
                   justify-content: center; }
         .header__bottom-cart-baloon__img {
-          background: url(/assets/img/catalog/item.png) 50% 50% no-repeat;
+          background: url("../assets/img/catalog/item.png") 50% 50% no-repeat;
           background-color: white;
           background-size: contain;
           width: 45px;
@@ -286,7 +286,7 @@
         height: 20px;
         right: auto;
         left: -24px;
-        background: url(/assets/img/vk.png) no-repeat right; }
+        background: url("../assets/img/vk.png") no-repeat right; }
     .selectSite .destop .selectCity-auth {
       font-size: 13px;
       color: #525a5f;
@@ -297,7 +297,7 @@
         height: 20px;
         right: auto;
         left: -26px;
-        background: url(/assets/img/auth.png) no-repeat right; }
+        background: url("../assets/img/auth.png") no-repeat right; }
 
 .footer {
   background-color: #f3f3f3;
@@ -400,14 +400,14 @@
             .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li a:hover svg {
               fill: white; }
             .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li a:hover.arrow:after {
-              background: url(../assets/img/catalog/arrow-white.svg) no-repeat right; }
+              background: url("../assets/img/catalog/arrow-white.svg") no-repeat right; }
         .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li.active a {
           color: #de2d42;
           text-decoration: underline; }
           .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li.active a svg {
             fill: white; }
           .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li.active a.arrow:after {
-            background: url(../assets/img/catalog/arrow-white.svg) no-repeat right;
+            background: url("../assets/img/catalog/arrow-white.svg") no-repeat right;
             -webkit-transform: rotate(180deg);
                     transform: rotate(180deg); }
     .content__left .aside__menu_ul_li {
@@ -436,14 +436,14 @@
           top: calc(50% - 10px);
           width: 10px;
           height: 20px;
-          background: url(../assets/img/catalog/arrow.svg) no-repeat right; }
+          background: url("../assets/img/catalog/arrow.svg") no-repeat right; }
         .content__left .aside__menu_ul_li a:hover {
           color: white;
           background-color: #de2d42; }
           .content__left .aside__menu_ul_li a:hover svg {
             fill: white; }
           .content__left .aside__menu_ul_li a:hover.arrow:after {
-            background: url(../assets/img/catalog/arrow-white.svg) no-repeat right; }
+            background: url("../assets/img/catalog/arrow-white.svg") no-repeat right; }
       .content__left .aside__menu_ul_li svg {
         position: absolute;
         left: 8px;
@@ -459,7 +459,7 @@
         .content__left .aside__menu_ul_li.active a svg {
           fill: white; }
         .content__left .aside__menu_ul_li.active a:after {
-          background: url(../assets/img/catalog/arrow-white.svg) no-repeat right;
+          background: url("../assets/img/catalog/arrow-white.svg") no-repeat right;
           -webkit-transform: rotate(180deg);
                   transform: rotate(180deg); }
 
@@ -626,7 +626,7 @@
     cursor: pointer;
     border-bottom: 1px solid #e3e3e3; }
   .search-baloon__img {
-    background: url("/assets/img/catalog/baloon-img.png") 50% 50% no-repeat;
+    background: url("../assets/img/catalog/baloon-img.png") 50% 50% no-repeat;
     background-color: white;
     background-size: contain;
     width: 68px;
