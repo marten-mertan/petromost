@@ -98,13 +98,13 @@
     bottom: 0;
     width: 100%;
     height: 44px;
-    top: 214px;
+    top: 161px;
     background-color: #ececec;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.28);
     z-index: 800; }
     @media screen and (max-width: 1170px) {
       .header__bottom {
-        top: 274px; } }
+        top: 221px; } }
     @media screen and (max-width: 720px) {
       .header__bottom {
         display: none; } }
@@ -400,31 +400,6 @@
     @media screen and (max-width: 1170px) {
       .content__left .aside__menu {
         display: none; } }
-    .content__left .aside__menu_ul .aside__menu_ul {
-      display: none;
-      padding: 8px 0; }
-      .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li {
-        border-bottom: 1px solid transparent; }
-        .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li a {
-          background-color: transparent;
-          color: #525a5f;
-          padding: 6px 36px; }
-          .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li a:hover {
-            color: #de2d42;
-            text-decoration: underline; }
-            .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li a:hover svg {
-              fill: white; }
-            .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li a:hover.arrow:after {
-              background: url("../assets/img/catalog/arrow-white.svg") no-repeat right; }
-        .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li.active a {
-          color: #de2d42;
-          text-decoration: underline; }
-          .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li.active a svg {
-            fill: white; }
-          .content__left .aside__menu_ul .aside__menu_ul .aside__menu_ul_li.active a.arrow:after {
-            background: url("../assets/img/catalog/arrow-white.svg") no-repeat right;
-            -webkit-transform: rotate(180deg);
-                    transform: rotate(180deg); }
     .content__left .aside__menu_ul_li {
       position: relative;
       display: -webkit-box;
@@ -437,13 +412,11 @@
       border-bottom: 1px solid #e1e1e1;
       color: #525a5f;
       cursor: pointer; }
-      .content__left .aside__menu_ul_li a {
-        display: block;
+      .content__left .aside__menu_ul_li span {
         position: relative;
         padding: 12px 36px;
-        color: inherit;
-        text-decoration: none; }
-        .content__left .aside__menu_ul_li a.arrow:after {
+        color: #525a5f; }
+        .content__left .aside__menu_ul_li span.arrow:after {
           content: "";
           display: block;
           position: absolute;
@@ -452,13 +425,16 @@
           width: 10px;
           height: 20px;
           background: url("../assets/img/catalog/arrow.svg") no-repeat right; }
-        .content__left .aside__menu_ul_li a:hover {
+        .content__left .aside__menu_ul_li span:hover {
           color: white;
           background-color: #de2d42; }
-          .content__left .aside__menu_ul_li a:hover svg {
+          .content__left .aside__menu_ul_li span:hover svg {
             fill: white; }
-          .content__left .aside__menu_ul_li a:hover.arrow:after {
+          .content__left .aside__menu_ul_li span:hover.arrow:after {
             background: url("../assets/img/catalog/arrow-white.svg") no-repeat right; }
+      .content__left .aside__menu_ul_li a {
+        color: inherit;
+        text-decoration: none; }
       .content__left .aside__menu_ul_li svg {
         position: absolute;
         left: 8px;
@@ -466,17 +442,47 @@
         width: 20px;
         height: 20px;
         margin: 0; }
-      .content__left .aside__menu_ul_li.active .aside__menu_ul {
+      .content__left .aside__menu_ul_li.active > .aside__menu_ul-sub {
         display: block; }
-      .content__left .aside__menu_ul_li.active a {
-        color: white;
-        background-color: #de2d42; }
-        .content__left .aside__menu_ul_li.active a svg {
+      .content__left .aside__menu_ul_li.active > span {
+        background-color: #de2d42;
+        color: white; }
+        .content__left .aside__menu_ul_li.active > span svg {
           fill: white; }
-        .content__left .aside__menu_ul_li.active a:after {
+        .content__left .aside__menu_ul_li.active > span:after {
           background: url("../assets/img/catalog/arrow-white.svg") no-repeat right;
           -webkit-transform: rotate(180deg);
                   transform: rotate(180deg); }
+    .content__left .aside__menu_ul-sub {
+      display: none;
+      padding: 0;
+      margin-left: 12px; }
+      .content__left .aside__menu_ul-sub .aside__menu_ul_li {
+        border-bottom: 1px solid transparent; }
+        .content__left .aside__menu_ul-sub .aside__menu_ul_li span {
+          background-color: transparent;
+          color: #525a5f;
+          padding: 6px 36px 6px 24px; }
+          .content__left .aside__menu_ul-sub .aside__menu_ul_li span:hover {
+            color: #de2d42;
+            text-decoration: underline; }
+            .content__left .aside__menu_ul-sub .aside__menu_ul_li span:hover svg {
+              fill: white; }
+            .content__left .aside__menu_ul-sub .aside__menu_ul_li span:hover.arrow:after {
+              background: url("../assets/img/catalog/arrow-red.svg") no-repeat right; }
+        .content__left .aside__menu_ul-sub .aside__menu_ul_li.active > .aside__menu_ul-sub {
+          display: block; }
+        .content__left .aside__menu_ul-sub .aside__menu_ul_li.active > span {
+          color: #de2d42;
+          text-decoration: underline; }
+          .content__left .aside__menu_ul-sub .aside__menu_ul_li.active > span svg {
+            fill: white; }
+          .content__left .aside__menu_ul-sub .aside__menu_ul_li.active > span.arrow:after {
+            background: url("../assets/img/catalog/arrow.svg") no-repeat right;
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+          .content__left .aside__menu_ul-sub .aside__menu_ul_li.active > span:hover.arrow:after {
+            background: url("../assets/img/catalog/arrow-red.svg") no-repeat right; }
 
 .baloon-select-city {
   display: none;

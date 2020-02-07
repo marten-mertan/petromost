@@ -1,5 +1,5 @@
 window.onload = function() {
-    $('.js-catalog-menu a').on('click', function(){
+    $('.js-catalog-menu span').on('click', function(){
         $('.js-catalog-menu li').removeClass("active");
         $(this).parents('.js-catalog-menu li').addClass("active");
     });

@@ -124,12 +124,12 @@
         bottom: 0;
         width: 100%;
         height: 44px;
-        top: 214px;
+        top: 161px;
         background-color: #ececec;
         box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.28);
         z-index: 800;
         @media screen and (max-width: 1170px){
-            top: 274px;
+            top: 221px;
         }
         @media screen and (max-width: 720px){
             display: none;
@@ -478,43 +478,6 @@
             display: none;
         }
         &_ul{
-            .aside__menu_ul{
-                display: none;
-                padding: 8px 0;
-                .aside__menu_ul_li{
-                    border-bottom: 1px solid transparent;
-                    a{
-                        background-color: transparent;
-                        color: #525a5f;
-                        
-                        padding: 6px 36px;
-                        &:hover{
-                            color: #de2d42;
-                            text-decoration: underline;
-                            svg{
-                                fill: white;
-                            }
-                            &.arrow:after{
-                                background: url('../assets/img/catalog/arrow-white.svg') no-repeat right;
-                            }
-                        }
-                    }
-                    &.active{
-                        a{
-                            color: #de2d42;
-                            text-decoration: underline;
-                            svg{
-                                fill: white;
-                            }
-                            &.arrow:after{
-                                background: url('../assets/img/catalog/arrow-white.svg') no-repeat right;
-                                transform: rotate(180deg);
-                            }
-                        }
-                    }
-                }
-                
-            }
             &_li{
                 position: relative;
                 display: flex;
@@ -524,13 +487,10 @@
                 border-bottom: 1px solid #e1e1e1;
                 color: #525a5f;
                 cursor: pointer;
-                a{
-                    display: block;
+                span{
                     position: relative;
                     padding: 12px 36px;
-                    color: inherit;
-                    text-decoration: none;
-                    
+                    color: #525a5f;
                     &.arrow:after{
                         content: "";
                         display: block;
@@ -552,6 +512,10 @@
                         }
                     }
                 }
+                a{
+                    color: inherit;
+                    text-decoration: none;
+                }
                 svg{
                     position: absolute;
                     left: 8px;
@@ -561,18 +525,63 @@
                     margin: 0
                 }
                 &.active{
-                    .aside__menu_ul{
+                    &>.aside__menu_ul-sub{
                         display: block;
                     }
-                    a{
-                        color: white;
+                    &>span{
                         background-color: #de2d42;
+                        color: white;
                         svg{
                             fill: white;
                         }
                         &:after{
                             background: url('../assets/img/catalog/arrow-white.svg') no-repeat right;
                             transform: rotate(180deg);
+                        }
+                    }
+                    
+                }
+            }
+        }
+        &_ul-sub{
+            display: none;
+            padding: 0;
+            margin-left: 12px;
+            .aside__menu_ul_li{
+                border-bottom: 1px solid transparent;
+                span{
+                    background-color: transparent;
+                    color: #525a5f;
+                    padding: 6px 36px 6px 24px;
+                    &:hover{
+                        color: #de2d42;
+                        text-decoration: underline;
+                        svg{
+                            fill: white;
+                        }
+                        &.arrow:after{
+                            background: url('../assets/img/catalog/arrow-red.svg') no-repeat right;
+                        }
+                    }
+                }
+                &.active{
+                    &>.aside__menu_ul-sub{
+                        display: block;
+                    }
+                    &>span{
+                        color: #de2d42;
+                        text-decoration: underline;
+                        svg{
+                            fill: white;
+                        }
+                        &.arrow:after{
+                            background: url('../assets/img/catalog/arrow.svg') no-repeat right;
+                            transform: rotate(180deg);
+                        }
+                        &:hover{
+                            &.arrow:after{
+                                background: url('../assets/img/catalog/arrow-red.svg') no-repeat right;
+                            }
                         }
                     }
                 }
