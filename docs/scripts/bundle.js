@@ -89,16 +89,12 @@
 /***/ (function(module, exports) {
 
 window.onload = function() {
-    $(document).on('click','.js-catalog-menu span', function(e){
+    $(document).on('click','.js-catalog-menu .arrow', function(e){
         if ($(this).parent().hasClass('active')){
             $(this).parent().removeClass('active');
         } else{
             $(this).parent().addClass('active');
         }
-        $('.js-catalog-menu span').not('.arrow').parent().removeClass("active");
-    });
-    $(document).on('click','.js-catalog-menu span', function(e){
-        
     });
     $('.js-input-change').bind('input', function() {
         var $this = $(this);
