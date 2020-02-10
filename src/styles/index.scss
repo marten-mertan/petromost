@@ -16,15 +16,19 @@
         font-size: 13px;
         @media screen and (max-width: 1170px){
             left: 0;
-            top: 100px;
+            top: 90px;
         }
         &_row{
             margin-bottom: 10px;
         }
         &_table{
+            table{
+                width: auto;
+            }
             td{
                 color: #7b7b7b;
                 text-decoration: line-through;
+                padding-right: 13px;
                 span{
                     background-color: #ececec;
                     border-radius: 11px;

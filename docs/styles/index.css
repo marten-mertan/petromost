@@ -12,12 +12,15 @@
     @media screen and (max-width: 1170px) {
       .header__deliv_time {
         left: 0;
-        top: 100px; } }
+        top: 90px; } }
     .header__deliv_time_row {
       margin-bottom: 10px; }
+    .header__deliv_time_table table {
+      width: auto; }
     .header__deliv_time_table td {
       color: #7b7b7b;
-      text-decoration: line-through; }
+      text-decoration: line-through;
+      padding-right: 13px; }
       .header__deliv_time_table td span {
         background-color: #ececec;
         border-radius: 11px; }
