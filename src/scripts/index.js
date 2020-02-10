@@ -1,7 +1,14 @@
 window.onload = function() {
-    $('.js-catalog-menu span').on('click', function(){
-        $('.js-catalog-menu li').removeClass("active");
-        $(this).parents('.js-catalog-menu li').addClass("active");
+    $(document).on('click','.js-catalog-menu span', function(e){
+        if ($(this).parent().hasClass('active')){
+            $(this).parent().removeClass('active');
+        } else{
+            $(this).parent().addClass('active');
+        }
+        $('.js-catalog-menu span').not('.arrow').parent().removeClass("active");
+    });
+    $(document).on('click','.js-catalog-menu span', function(e){
+        
     });
     $('.js-input-change').bind('input', function() {
         var $this = $(this);
