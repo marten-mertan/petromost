@@ -27,7 +27,7 @@ window.onload = function() {
             element.removeClass('active');
         }
     });
-    $('.js-select-city').on('click', function(e){
+    $(document).on('click','.js-select-city', function(e){
         e.stopPropagation();
         $('.js-select-city-baloon').addClass('active');
     });
@@ -42,7 +42,7 @@ window.onload = function() {
             element.removeClass('active');
         }
     });
-    $('.js-show-cart').on('click', function(e){
+    $(document).on('click','.js-show-cart', function(e){
         e.stopPropagation();
         $('.js-cart-baloon').addClass('active');
         $('.js-show-cart').addClass('active');
@@ -88,7 +88,4 @@ window.onload = function() {
         $('.js-select-city-link').removeClass('active');
         $(this).addClass('active');
     });
-
-    
-
 };
