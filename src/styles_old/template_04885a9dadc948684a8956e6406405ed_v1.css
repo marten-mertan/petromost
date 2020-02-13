@@ -5080,7 +5080,7 @@ span.checkbox {
     width: 18px;
     height: 26px;
     display: block;
-    background: url(/bitrix/templates/main_adaptive/img/s-right-arrow.png) no-repeat;
+    background: url(../bitrix/templates/main_adaptive/img/s-right-arrow.png) no-repeat;
 }
 .flex-direction-nav .flex-prev {
     position: absolute;
@@ -5092,7 +5092,7 @@ span.checkbox {
     width: 18px;
     height: 26px;
     display: block;
-    background: url(/bitrix/templates/main_adaptive/img/s-left-arrow.png) no-repeat;
+    background: url(../bitrix/templates/main_adaptive/img/s-left-arrow.png) no-repeat;
 }
 .flexslider .flex-control-nav {
     position: absolute;
