@@ -1064,6 +1064,8 @@ ul.baron__scroller {
           padding: 4px 10px 4px;
           max-width: 180px;
           box-sizing: border-box; }
+          .cart-new-category-item-info__tag:not(:last-child) {
+            margin-bottom: 10px; }
           .cart-new-category-item-info__tag-sale {
             display: -webkit-box;
             display: flex;
@@ -1072,6 +1074,8 @@ ul.baron__scroller {
                     flex-direction: row;
             box-sizing: border-box;
             max-width: 180px; }
+            .cart-new-category-item-info__tag-sale:not(:last-child) {
+              margin-bottom: 10px; }
             .cart-new-category-item-info__tag-sale-left {
               width: 70%;
               text-transform: uppercase;
@@ -1371,6 +1375,13 @@ ul.baron__scroller {
 
 .mod-red {
   color: #de2d42; }
+
+.mod-over {
+  background-color: transparent;
+  color: #8c8c8c;
+  border: 1px solid #8c8c8c;
+  padding-top: 3px;
+  padding-bottom: 3px; }
 
 .mod-temporary {
   border: 1px solid #de2d42; }
