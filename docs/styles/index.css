@@ -1204,7 +1204,7 @@ ul.baron__scroller {
   padding: 59px 0 0; }
   @media screen and (max-width: 1170px) {
     .cart-aside {
-      padding: 0; } }
+      padding: 0 0 30px 0; } }
   .cart-aside-container {
     border-radius: 10px;
     background-color: #fbfbfb;
