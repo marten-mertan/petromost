@@ -219,6 +219,7 @@ window.onload = function() {
             if (window.innerWidth<=1170){
                 asideWrapper.className = '';
                 asideWrapper.style.top = '';
+                asideCart.style.height = 'auto';
             }
         }, false);
     }
