@@ -5,6 +5,42 @@
     @media screen and (max-width: 1170px){
 
     }
+    &__decor-1{
+        position: absolute;
+        width: 307px;
+        right: -30px;
+        top: 76px;
+        height: 120px;
+        overflow: hidden;
+        @media screen and (max-width: 1170px){
+            height: 86px;
+        }
+        @media screen and (max-width: 720px){
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__decor-2{
+        position: absolute;
+        width: 307px;
+        right: -30px;
+        top: 204px;
+        height: 20px;
+        overflow: hidden;
+        @media screen and (max-width: 1170px){
+            top: 264px;
+        }
+        @media screen and (max-width: 720px){
+            display: none;
+        }
+        img{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
     &__deliv_time {
         top: 26px;
         left: 328px;
@@ -68,7 +104,8 @@
             margin-right: 0;
         }
         &-text{
-            font-size: 13px;
+            font-size: 17px;
+            line-height: 18px;
             color: #525a5f;
             margin: 0 0 11px 0;
             padding: 0;
@@ -90,6 +127,8 @@
         }
         &_item{
             font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
             &:not(:last-child){
                 margin-right: 32px;
             }
@@ -378,9 +417,9 @@
 }
 
 .footer{
-    background-color: #f3f3f3;
-    border-top: 4px solid #db3923;
-    padding: 20px 0 30px;
+    background-color: #4f535d;
+    border-top: none;
+    padding: 30px 0 30px;
     &-container{
         margin: 0 auto;
         padding: 0;
@@ -404,7 +443,7 @@
     padding: 0;
 }
 .foo__logo{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .foo__right{
     width: 250px;
@@ -416,16 +455,55 @@
 }
 .foo__li{
     font-size: 14px;
-    color: black;
+    color: #fbfbfb;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+    @media screen and (max-width: 869px){
+        display: inline-block;
+        margin: 0 4px;
+    }
+    @media screen and (max-width: 490px){
+        display: block;
+        margin-bottom: 8px;
+    }
+    &:first-child{
+        margin-bottom: 30px;
+        @media screen and (max-width: 869px){
+            display: inline-block;
+            margin: 0;
+        }
+        @media screen and (max-width: 490px){
+            display: block;
+            margin-bottom: 12px;
+        }
+    }
     a{
         font-size: 13px;
-        color: #525a5f;
+        line-height: 16px;
+        color: #fbfbfb;
         text-transform: none;
         font-weight: normal;
     }
+}
+.foo__copy {
+    color: #fbfbfb;
+    margin-bottom: 13px;
+}
+.foo__dev{
+    color: #fbfbfb;
+    a{
+        color: #fbfbfb;
+        text-decoration: none;
+        &:hover{
+            color: #DA251D;
+        }
+    }
+}
+.foo__snegiri{
+    display: block; 
+    text-align: center; 
+    margin-bottom: 30px;
 }
 
 .content.cf {
@@ -439,6 +517,7 @@
     float: right;
     padding-left: 33px;
     padding-right: 0;
+    color: #232833;
     @media screen and (max-width: 1170px){
         overflow: hidden;
         float: none;
@@ -683,7 +762,7 @@
                 padding: 9px 10px 7px;
                 outline: none;
                 font-weight: normal;
-                font-family: Tahoma, sans-serif;
+                font-family: 'Roboto', sans-serif;
                 width: 100%;
                 &:not(:placeholder-shown){
                     &+span{
@@ -1435,7 +1514,7 @@ ul.baron__scroller {
                 font-size: 13px;
                 line-height: 18px;
                 font-weight: normal;
-                font-family: Tahoma, sans-serif;
+                font-family: 'Roboto', sans-serif;
                 width: 100%;
                 background-color: white;
                 transition: all 0.4s ease;
@@ -1562,4 +1641,168 @@ ul.baron__scroller {
 .stop {
     position: relative;
     z-index: 101;
+}
+
+.content__wide{
+    width:100%;
+    padding-right: 0;
+    padding-left: 0;
+    float: none;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #232833;
+}
+
+// замена шрифтов на сайте
+.site_container, .block__popup, body{
+    font-family: 'Roboto', sans-serif;
+}
+.site_container input, .site_container textarea, .site_container button, .block__popup input, .block__popup textarea, .block__popup button {
+    font-family: 'Roboto', sans-serif;
+}
+.site_container a, .block__popup a, .ui-datepicker a, .block__popup a {
+    font-family: 'Roboto', sans-serif;
+}
+.category__list .c-category__title {
+    font-family: 'Roboto', sans-serif;
+}
+.goods__bought .goods__incart_number {
+    font-family: 'Roboto', sans-serif;
+}
+.popup_auth .tabs>label {
+    font-family: 'Roboto', sans-serif;
+}
+.site_container .category__menu_link {
+    font-family: 'Roboto', sans-serif;
+}
+.site_container .category__menu_item a {
+    font-family: 'Roboto', sans-serif;
+}
+.category__list .c-category__title {
+    font-family: 'Roboto', sans-serif;
+}
+.goods__price-old {
+    font-family: 'Roboto', sans-serif;
+}
+.site_container .category__submenu_item a {
+    font-family: 'Roboto', sans-serif;
+}
+.product-card {
+    font-family: 'Roboto', sans-serif;
+}
+.pie {
+    font-family: 'Roboto', sans-serif;
+}
+.pie-form {
+    font-family: 'Roboto', sans-serif;
+}
+.c-filter-tab__title {
+    font-family: 'Roboto', sans-serif;
+}
+.pie-order-success{
+    font-family: 'Roboto', sans-serif;
+}
+.goods__price-for-card span {
+    font-family: 'Roboto', sans-serif;
+}
+.c-pagination {
+    font-family: 'Roboto', sans-serif;
+}
+.sales_block {
+    font-family: 'Roboto', sans-serif;
+}
+#fancybox-title {
+    font-family: 'Roboto', sans-serif;
+}
+div.title-search-result {
+    font-family: 'Roboto', sans-serif;
+}
+.aside__row_total {
+    font-family: 'Roboto', sans-serif;
+}
+.aside__row_total b {
+    font-family: 'Roboto', sans-serif;
+}
+.aside__user_item {
+    font-family: 'Roboto', sans-serif;
+}
+.header__contact {
+    font-family: 'Roboto', sans-serif;
+}
+.header__tel--mobile-text {
+    font-family: 'Roboto', sans-serif;
+}
+.header__tel--mobile-call {
+    font-family: 'Roboto', sans-serif;
+}
+.site_container .mobile-btn_menu, .site_container .mobile-btn_basket {
+    font-family: 'Roboto', sans-serif;
+}
+.header__menu_item a, .category__menu_item a {
+    font-family: 'Roboto', sans-serif;
+}
+.aside__menu .aside__menu_item a{
+    font-family: 'Roboto', sans-serif;
+}
+.site_container .mobile-close {
+    font-family: 'Roboto', sans-serif;
+}
+a.show-readmore, a.hide-readmore {
+    font-family: 'Roboto', sans-serif;
+}
+.site_container .popap-basket .mobile-close {
+    font-family: 'Roboto', sans-serif;
+}
+
+// страница "Оптовым покупателям"
+.site_container{
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: #de2d42;
+        text-transform: uppercase;
+    }
+    .mod-text{
+        font-size: 18px;
+        line-height: 30px;
+        color: #232833;
+        font-weight: 300;
+    }
+    .mod-link{
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #232833;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .mod-signature{
+        font-size: 18px;
+        line-height: 30px;
+        color: #9e9e9e;
+        text-align: right;
+        font-weight: 300;
+    }
+}
+
+//breadcrumbs
+.breadcrumbs {
+    color: #9e9e9e;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    a{
+        color: #9e9e9e;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    span{
+        margin: 0;
+    }
+    .mod-last{
+        color: #232833;
+    }
 }
