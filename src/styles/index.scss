@@ -1836,3 +1836,110 @@ a.show-readmore, a.hide-readmore {
         color: #232833;
     }
 }
+
+//adventageous-purchases
+.purchases-categories{
+    margin-bottom: 12px;
+    &-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px 0;
+        border-bottom: 1px solid #a9ce29;
+        margin-bottom: 13px;
+        &__button{
+            position: relative;
+            font-size: 14px;
+            line-height: 18px;
+            color: white;
+            padding: 8px 35px 6px 20px;
+            border-radius: 4px;
+            background-color: #a9ce29;
+            cursor: pointer;
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                right: 16px;
+                top: calc(50% - 3px);
+                width: 10px;
+                height: 7px;
+                background: url(../assets/img/catalog/arrow-white.svg) no-repeat top;
+                transform: rotate(0deg);
+                transition: transform 0.4s;
+            }
+        }
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 0px;
+        overflow: hidden;
+        .catalog-filter__list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            margin-bottom: 13px;
+
+        }
+        .catalog-filter__item{
+            width: 33%;
+            font-size: 14px;
+            color: #525a5f;
+            @media screen and (max-width: 720px){
+                width: 50%;
+            }
+            @media screen and (max-width: 480px){
+                width: 100%;
+            }
+            label{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 17px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            input.checkbox[type="checkbox"]:checked ~ span {
+                font-weight: 500;
+                color: #a9ce29;
+            }
+            input.checkbox[type="checkbox"]:checked ~ .checkbox {
+                background-position: 0 -35px;
+            }
+            span{
+                &.checkbox{
+                    display: block;
+                    width: 20px;
+                    min-width: 20px;
+                    height: 20px;
+                    background: url(../assets/img/checkbox-new.png) no-repeat 0 0;
+                    margin-right: 9px;
+                }
+            }
+        }
+        &__button{
+            background-color: #f3f3f3;
+            padding: 6px 18px 7px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #525a5f;
+            border-radius: 15px;
+            cursor: pointer;
+
+        }
+    }
+    &.active{
+        margin-bottom: 36px;
+        .purchases-categories-top__button::after{
+            transform: rotate(180deg);
+        }
+        .purchases-categories-body{
+            height: auto;
+        }
+    }
+}

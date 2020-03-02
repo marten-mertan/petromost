@@ -174,4 +174,27 @@ window.onload = function() {
         }
 
     });
+
+    // страница "Товары недели"
+    $(document).on('click','.js-show-categories', function(e){
+        $('.js-categories').toggleClass("active");
+    });
+    $(document).on('click','.js-remove-categories', function(e){
+        var items = [];
+        showLoader();
+        $.ajax({
+            method: 'POST',
+            data: {
+                ajax: true,
+                section: items
+            },
+            success: function (res) {
+                $('#replace').html(res);
+                setAllHeight();
+                $('.catalog-filter__list .checkbox').prop('checked', false);
+                endLoader();
+            }
+        })
+    });
+    
 };
