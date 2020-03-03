@@ -1775,7 +1775,8 @@ a.show-readmore, a.hide-readmore {
       -webkit-box-direction: normal;
               flex-direction: column;
       -webkit-box-align: center;
-              align-items: center; } }
+              align-items: center;
+      margin-bottom: 16px; } }
   @media screen and (max-width: 540px) {
     .purchases-categories-timer {
       padding-top: 0;
@@ -1784,7 +1785,7 @@ a.show-readmore, a.hide-readmore {
     font-size: 34px;
     line-height: 1;
     color: #4f4747;
-    padding-top: 36px; }
+    padding-top: 34px; }
     @media screen and (max-width: 890px) {
       .purchases-categories-timer-left {
         padding-top: 0;
