@@ -1789,7 +1789,7 @@ a.show-readmore, a.hide-readmore {
     @media screen and (max-width: 890px) {
       .purchases-categories-timer-left {
         padding-top: 0;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         text-align: center; } }
     @media screen and (max-width: 540px) {
       .purchases-categories-timer-left {
