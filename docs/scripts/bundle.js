@@ -286,6 +286,33 @@ window.onload = function() {
             }
         })
     });
+
+    // личный кабинет
+    $(document).on('click','.js-history-item', function(e){
+        let id = $(this).data('id');
+        $('.js-history').addClass('hide');
+        $('.js-history-more').removeClass('show');
+        $('#'+id+'.js-history-more').addClass('show');
+    });
+    $(document).on('click','.js-history-back', function(e){
+        $('.js-history').removeClass('hide');
+        $('.js-history-more').removeClass('show');
+    });
+    $(document).on('click','.js-history-delete', function(e){
+        e.stopPropagation();
+    });
+    $(document).on('click','.js-history-repeat', function(e){
+        e.stopPropagation();
+    });
+    $(document).on('click','.js-favorite-add', function(e){
+        $(this).toggleClass("active");
+    });
+    $(document).on('click','.js-address-edit', function(e){
+        $(this).parents('.js-address').addClass('editing');
+    });
+    $(document).on('click','.js-address-edit-exit', function(e){
+        $(this).parents('.js-address').removeClass('editing');
+    });
     
 };
 
