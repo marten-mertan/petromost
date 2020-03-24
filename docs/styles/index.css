@@ -3167,8 +3167,9 @@ a.show-readmore, a.hide-readmore {
   .content__center-cart {
     min-height: 600px; } }
 
-.header__left {
-  width: 1000px; }
+@media screen and (min-width: 1171px) {
+  .header__left {
+    width: 1000px; } }
 
 .header__menu {
   z-index: 1; }
