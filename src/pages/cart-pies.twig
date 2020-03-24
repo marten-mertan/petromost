@@ -429,22 +429,27 @@
                                 </a>
                             </li>
                             <li class="header__menu_item">
-                                <a href="/advantageous-purchases/" target="">
-                                    <img style="max-height:18px;" src="assets/img/sale_icon.png" alt="Только неделю"/>
+                                <a href="/" target="">
+                                    Акции %
                                 </a>
                             </li>
                             <li class="header__menu_item">
-                                <a href="/help/" target="">
+                                <a href="/" target="">
+                                    <img style="max-height:18px;" src="assets/img/pies/list-item-pies.png" alt="Пироги"/>
+                                </a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="/" target="">
                                     Помощь
                                 </a>
                             </li>
                             <li class="header__menu_item">
-                                <a href="/delivery-and-payment/" target="">
+                                <a href="/" target="">
                                     Доставка и оплата
                                 </a>
                             </li>
                             <li class="header__menu_item">
-                                <a href="/delivery-and-payment/page.php" target="">
+                                <a href="/" target="">
                                     Оптовым покупателям
                                 </a>
                             </li>
@@ -1123,10 +1128,10 @@
                     <br>
                 </div>
                 <div class="header__decor-1">
-                    <img src="assets/img/header-pic.png" alt="Петровский">
+                    <img src="assets/img/pies/header-pic-pies.png" alt="Петровский">
                 </div>
                 <div class="header__decor-2">
-                    <img src="assets/img/header-pic.png" alt="Петровский">
+                    <img src="assets/img/pies/header-pic-pies.png" alt="Петровский">
                 </div>
 
                 <script type="text/javascript" src="scripts_old/script.js"></script>
@@ -1196,8 +1201,22 @@
             </header>
             <!-- begin content  -->
             <div class="content cf">
+                <div class="breadcrumbs">
+                    <a href="/" title="Главная">Главная</a>
+                    <span>/</span>
+                    <a href="/" title="Персональный раздел">Персональный раздел</a>
+                    <span>/</span>
+                    <span class="mod-last" title="Корзина">Корзина</span>
+                </div>
+                <div class="cart-pies-tabs">
+                    <div class="cart-pies-tabs-item js-cart-tab-all ">
+                        Все товары
+                    </div>
+                    <div class="cart-pies-tabs-item js-cart-tab-pies active">
+                        Пироги на заказ
+                    </div>
+                </div>
                 <section class="content__center content__center-cart js-cart">
-
                     <div class="header__deliv_time">
                         <div class="header__deliv_time_row">
                             Доступное время доставки:
@@ -1264,13 +1283,6 @@
                         <a href="tel:200318" class="header__tel--mobile-call">Позвонить сейчас</a>
 
                     </div>
-                    <div class="breadcrumbs">
-                        <a href="/" title="Главная">Главная</a>
-                        <span>/</span>
-                        <a href="/" title="Персональный раздел">Персональный раздел</a>
-                        <span>/</span>
-                        <span class="mod-last" title="Корзина">Корзина</span>
-                    </div>
                     <div class="banner-mini">
                         <a href="/advantageous-purchases/">
                             <div class="banner-mini-decor-1">
@@ -1283,7 +1295,6 @@
                         </a>
                     </div>
 
-
                     <div class="basket-fly empty">
                         <a href="/personal/">
                             <div class="basket-fly__icon"></div>
@@ -1293,7 +1304,7 @@
                         </a>
                     </div>
 
-                    <div class="cart-new">
+                    <div class="cart-new js-cart-all mod-hide">
                         <div class="cart-new-category">
                             <p class="cart-new-category__title mod-red">
                                 Эти товары отсутствуют в наличии и удалены из корзины
@@ -1618,12 +1629,204 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cart-pies js-cart-pies">
+                            <div class="pies-catalog-item js-pie">
+                                <div class="pies-catalog-item__number">
+                                    1
+                                </div>
+                                <div class="pies-catalog-item__marker">
+                                    
+                                </div>
+                                <div class="pies-catalog-item-left">
+                                    <div class="pies-catalog-item__img">
+                                        <img src="assets/img/pies/item-1.png" alt="Пирог ржаной грибная лукерья">
+                                    </div>
+                                </div>
+                                <div class="pies-catalog-item-right">
+                                    <div class="pies-catalog-item-top">
+                                        <div class="pies-catalog-item__title">
+                                            Пирог с горбушей
+                                        </div>
+                                        <div class="pies-catalog-item__subtitle">
+                                            Свежая горбуша, томаты, сыр
+                                        </div>
+                                        <div class="pies-catalog-item__info">
+                                            Тесто пшеничное, дрожжевое на сметане <br /> (более сдобное и нежное, чем обычное тесто)
+                                        </div>
+                                        <div class="pies-catalog-item__weight">
+                                            Вес: 1кг
+                                        </div>
+                                    </div>
+                                    <div class="pies-catalog-item-bottom">
+                                        <span class="pies-catalog-item__button mod-pie-minus js-pie-minus">–</span>
+                                        <div class="pies-catalog-item-bottom-info js-pie-input">
+                                            <div class="pies-catalog-item-bottom-info-counter">
+                                                <input class="pies-catalog-item__counter" type="tel" value="0" data-max="24" readonly="">
+                                                шт
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__price js-pie-price" data-price="400">
+                                            400,00
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__text">
+                                                руб <br/>
+                                                /шт
+                                            </div>
+                                        </div>
+                                        <span class="pies-catalog-item__button mod-pie-plus js-pie-plus">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pies-catalog-item js-pie in-cart">
+                                <div class="pies-catalog-item__number">
+                                    2
+                                </div>
+                                <div class="pies-catalog-item__marker">
+                                    
+                                </div>
+                                <div class="pies-catalog-item-left">
+                                    <div class="pies-catalog-item__img">
+                                        <img src="assets/img/pies/item-2.png" alt="Пирог ржаной грибная лукерья">
+                                    </div>
+                                </div>
+                                <div class="pies-catalog-item-right">
+                                    <div class="pies-catalog-item-top">
+                                        <div class="pies-catalog-item__title">
+                                            Пирог ржаной грибная лукерья
+                                        </div>
+                                        <div class="pies-catalog-item__subtitle">
+                                            Шампиньоны, капуста, лук, яйцо
+                                        </div>
+                                        <div class="pies-catalog-item__info">
+                                            Тесто ржаное, сдобное, дрожжевое <br /> (сдобное тесто на ржаной муке)
+                                        </div>
+                                        <div class="pies-catalog-item__weight">
+                                            Вес: 1кг
+                                        </div>
+                        
+                                    </div>
+                                    <div class="pies-catalog-item-bottom">
+                                        <span class="pies-catalog-item__button mod-pie-minus js-pie-minus">–</span>
+                                        <div class="pies-catalog-item-bottom-info js-pie-input">
+                                            <div class="pies-catalog-item-bottom-info-counter">
+                                                <input class="pies-catalog-item__counter" type="tel" value="3" data-max="24" readonly="">
+                                                шт
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__price js-pie-price" data-price="400,32">
+                                            1200,96
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__text">
+                                                руб <br/>
+                                                /шт
+                                            </div>
+                                        </div>
+                                        <span class="pies-catalog-item__button mod-pie-plus js-pie-plus">+</span>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="pies-catalog-item js-pie">
+                                <div class="pies-catalog-item__number">
+                                    3
+                                </div>
+                                <div class="pies-catalog-item__marker">
+                                    
+                                </div>
+                                <div class="pies-catalog-item-left">
+                                    <div class="pies-catalog-item__img">
+                                        <img src="assets/img/pies/item-3.png" alt="Пирог постный с сухофруктами и грецкими орехами">
+                                    </div>
+                                </div>
+                                <div class="pies-catalog-item-right">
+                                    <div class="pies-catalog-item-top">
+                                        <div class="pies-catalog-item__title">
+                                            Пирог постный с сухофруктами и грецкими орехами
+                                        </div>
+                                        <div class="pies-catalog-item__subtitle">
+                                            Курага, изюм, чернослив, грецкий орех, яйцо
+                                        </div>
+                                        <div class="pies-catalog-item__info">
+                                            Тесто пшеничное, дрожжевое на сметане <br /> (более сдобное и нежное, чем обычное тесто)
+                                        </div>
+                                        <div class="pies-catalog-item__weight">
+                                            Вес: 1кг
+                                        </div>
+                        
+                                    </div>
+                                    <div class="pies-catalog-item-bottom">
+                                        <span class="pies-catalog-item__button mod-pie-minus js-pie-minus">–</span>
+                                        <div class="pies-catalog-item-bottom-info js-pie-input">
+                                            <div class="pies-catalog-item-bottom-info-counter">
+                                                <input class="pies-catalog-item__counter" type="tel" value="0" data-max="24" readonly="">
+                                                шт
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__price js-pie-price" data-price="399.52">
+                                            399,52
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__text">
+                                                руб <br/>
+                                                /шт
+                                            </div>
+                                        </div>
+                                        <span class="pies-catalog-item__button mod-pie-plus js-pie-plus">+</span>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="pies-catalog-item js-pie in-cart">
+                                <div class="pies-catalog-item__number">
+                                    4
+                                </div>
+                                <div class="pies-catalog-item__marker">
+                                    
+                                </div>
+                                <div class="pies-catalog-item-left">
+                                    <div class="pies-catalog-item__img">
+                                        <img src="assets/img/pies/item-4.png" alt="Пирог ржаной грибная лукерья">
+                                    </div>
+                                </div>
+                                <div class="pies-catalog-item-right">
+                                    <div class="pies-catalog-item-top">
+                                        <div class="pies-catalog-item__title">
+                                            Пирог ржаной закусочный
+                                        </div>
+                                        <div class="pies-catalog-item__subtitle">
+                                            Ветчина, яйцо, томаты, зелень
+                                        </div>
+                                        <div class="pies-catalog-item__info">
+                                            Тесто ржаное, сдобное, дрожжевое <br /> (сдобное тесто на ржаной муке)
+                                        </div>
+                                        <div class="pies-catalog-item__weight">
+                                            Вес: 1кг
+                                        </div>
+                        
+                                    </div>
+                                    <div class="pies-catalog-item-bottom">
+                                        <span class="pies-catalog-item__button mod-pie-minus js-pie-minus">–</span>
+                                        <div class="pies-catalog-item-bottom-info js-pie-input">
+                                            <div class="pies-catalog-item-bottom-info-counter">
+                                                <input class="pies-catalog-item__counter" type="tel" value="3" data-max="24" readonly="">
+                                                шт
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__price js-pie-price" data-price="400,98">
+                                            1202,94
+                                            </div>
+                                            <div class="pies-catalog-item-bottom-info__text">
+                                                руб <br/>
+                                                /шт
+                                            </div>
+                                        </div>
+                                        <span class="pies-catalog-item__button mod-pie-plus js-pie-plus">+</span>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
                 </section>
 
                 <!-- end content__center -->
-                <!-- begin content__left -->
+                <!-- begin content__right -->
                 <aside class="content__right content__right-cart js-aside">
-                    <div class="cart-aside">
+                    <div class="cart-aside js-cart-all mod-hide">
                         <div class="cart-aside-container">
                             <div class="cart-aside-top">
                                 <p class="cart-aside-top__title">Введите номер карты Снегири для&nbsp;участия в&nbsp;акции "Цена по&nbsp;карте"</p>
@@ -1653,8 +1856,31 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cart-aside-pies js-cart-pies">
+                        <div class="cart-aside-container">
+                            <div class="cart-aside-bottom">
+                                <div class="cart-aside-bottom__attention">
+                                    !Внимание
+                                </div>
+                                <div class="cart-aside-bottom__attention-text">
+                                    Доставка выпечки осуществляется только на следующий день после заказа. 
+                                </div>
+                                <div class="cart-aside-bottom-price">
+                                    <div class="cart-aside-bottom-price-col">
+                                        <p class="cart-aside-bottom-price__text">Итого к&nbsp;оплате:</p>
+                                        <p class="cart-aside-bottom-price__sum mod-green"><span>1 787,45</span> р</p>
+                                    </div>
+                                </div>
+                                <div class="cart-aside-bottom-info">
+                                    <p class="cart-aside-bottom-info__text">Цена указывается без&nbsp;учета стоимости доставки</p>
+                                    <p class="cart-aside-bottom-info__text">Минимальная сумма заказа для&nbsp;БЕСПЛАТНОЙ доставки составляет 1500 руб</p>
+                                </div>
+                                <button class="cart-aside-bottom__button mod-green-btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
                 </aside>
-                <!-- end content__left -->
+                <!-- end content__right -->
             </div>
             <!-- end content -->
 

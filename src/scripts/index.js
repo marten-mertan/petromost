@@ -223,5 +223,51 @@ window.onload = function() {
     $(document).on('click','.js-address-edit-exit', function(e){
         $(this).parents('.js-address').removeClass('editing');
     });
+
+    // страница пирогов
+    $(document).on('click','.js-pie-minus', function(e){
+        var count = parseInt($(this).siblings('.js-pie-input').find('input').val());
+        var price = $(this).siblings('.js-pie-input').find('.js-pie-price').data('price').toString().replace(/\,/g,'.');
+        if (count==1){
+            $(this).parents('.js-pie').removeClass('in-cart');
+        }
+        if (count > 0){
+            $(this).siblings('.js-pie-input').find('input').val(count-1);
+        }
+        if (count > 1){
+            var currentPrice = (price*(count-1)).toFixed(2);
+            currentPrice = currentPrice.toString().replace(/\./g,',');
+            $(this).siblings('.js-pie-input').find('.js-pie-price').text(currentPrice);
+        }
+    });
+    $(document).on('click','.js-pie-plus', function(e){
+        var count = parseInt($(this).siblings('.js-pie-input').find('input').val());
+        var max = parseInt($(this).siblings('.js-pie-input').find('input').data('max'));
+        var price = $(this).siblings('.js-pie-input').find('.js-pie-price').data('price').toString().replace(/\,/g,'.');
+        if (count==0){
+            $(this).parents('.js-pie').addClass('in-cart');
+        }
+        if (count < max){
+            $(this).siblings('.js-pie-input').find('input').val(count+1);
+            var currentPrice = (price*(count+1)).toFixed(2);
+            currentPrice = currentPrice.toString().replace(/\./g,',');
+            $(this).siblings('.js-pie-input').find('.js-pie-price').text(currentPrice);
+        }
+    });
+
+    // корзина пироги
+    $(document).on('click','.js-cart-tab-all', function(e){
+        $('.js-cart-tab-pies').removeClass('active');
+        $(this).addClass('active');
+        $('.js-cart-all').removeClass('mod-hide');
+        $('.js-cart-pies').addClass('mod-hide');
+    });
+    $(document).on('click','.js-cart-tab-pies', function(e){
+        $('.js-cart-tab-all').removeClass('active');
+        $(this).addClass('active');
+        $('.js-cart-pies').removeClass('mod-hide');
+        $('.js-cart-all').addClass('mod-hide');
+
+    });
     
 };
