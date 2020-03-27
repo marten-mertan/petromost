@@ -1085,9 +1085,13 @@ ul.baron__scroller {
       background-color: white;
       border: 2px solid #fede39;
       border-radius: 50%;
+      box-sizing: border-box;
       z-index: 1; }
 
 .mod-attention .goods__tag-sale-right {
+  padding-left: 8px; }
+
+.mod-attention .cart-new-category-item-info__tag-sale-right {
   padding-left: 8px; }
 
 .in-cart .goods__bottom_price {
@@ -1272,7 +1276,8 @@ ul.baron__scroller {
             .cart-new-category-item-info__tag-sale:not(:last-child) {
               margin-bottom: 10px; }
             .cart-new-category-item-info__tag-sale-left {
-              width: 70%;
+              position: relative;
+              width: 65%;
               text-transform: uppercase;
               background-color: #fede39;
               font-size: 10px;
@@ -1280,17 +1285,56 @@ ul.baron__scroller {
               color: #de2d42;
               font-weight: bold;
               text-align: center;
-              padding: 4px 0 4px; }
+              padding: 4px 5px 4px; }
             .cart-new-category-item-info__tag-sale-right {
-              width: 30%;
+              position: relative;
+              display: -webkit-box;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                      flex-direction: row;
+              -webkit-box-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                      align-items: center;
+              width: 35%;
               text-transform: uppercase;
               background-color: #de2d42;
-              font-size: 10px;
+              font-size: 12px;
               line-height: 16px;
               color: white;
               font-weight: bold;
               text-align: center;
               padding: 4px 0 4px; }
+            .cart-new-category-item-info__tag-sale-text {
+              font-size: 10px;
+              line-height: 10px;
+              text-align: left;
+              margin-bottom: 2px;
+              text-transform: uppercase; }
+            .cart-new-category-item-info__tag-sale-subtext {
+              font-size: 10px;
+              line-height: 10px;
+              font-weight: normal;
+              text-align: left;
+              color: #454a4b;
+              text-transform: none; }
+            .cart-new-category-item-info__tag-sale-attention {
+              position: absolute;
+              top: 1px;
+              right: -13px;
+              width: 28px;
+              height: 28px;
+              font-size: 16px;
+              line-height: 28px;
+              color: #de2d42;
+              font-weight: bold;
+              text-transform: uppercase;
+              background-color: white;
+              border: 2px solid #fede39;
+              border-radius: 50%;
+              box-sizing: border-box;
+              z-index: 1; }
       .cart-new-category-item-right {
         position: absolute;
         right: 0;
