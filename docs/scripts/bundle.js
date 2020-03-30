@@ -361,37 +361,6 @@ window.onload = function() {
     });
 
     // checkout
-    $(document).on('click','.js-about-time', function(e){
-        let index = Number($(this).data('index'));
-        $('.js-about-time').removeClass('active');
-        $(this).addClass('active');
-        $('.js-about-time-tab').removeClass('active');
-        $('.js-about-time-tab').addClass(function (i){
-            if (i==index){
-                return 'active';
-            }
-        });
-    });
-
-    $(document).on('click','.js-checkout-head', function(e){
-        e.stopPropagation();
-        $(this).parents('.js-checkout-category').toggleClass('closed');
-        checkAll();
-    });
-
-    $(document).on('click','.js-checkout-next', function(e){
-        e.preventDefault();
-        $(this).parents('.js-checkout-category').addClass('closed');
-        checkAll();
-        $('.js-checkout-category').not('.complete').first().removeClass('closed');
-    });
-    
-    $(document).on('click','.js-accept', function(e){
-        e.stopPropagation();
-        $('.js-checkout-button').addClass('active');
-        checkAll();
-    });
-
     function checkSnegiri(){
         $('.js-snegiri-input').val();
         if ($('.js-snegiri-button').text()=='Удалить карту'){
@@ -443,30 +412,6 @@ window.onload = function() {
     }
     function checkAll(){
         let check = true;
-        if (checkSnegiri()){
-            $('.js-snegiri').addClass('complete');
-        } else{
-            $('.js-snegiri').removeClass('complete');
-        }
-        if (checkBuys()){
-            $('.js-buys').addClass('complete');
-        } else{
-            $('.js-buys').removeClass('complete');
-            check = false;
-
-        }
-        if (checkDelivery()){
-            $('.js-delivery').addClass('complete');
-        } else{
-            $('.js-delivery').removeClass('complete');
-            check = false;
-        }
-        if (checkPayment()){
-            $('.js-payment').addClass('complete');
-        } else{
-            $('.js-payment').removeClass('complete');
-            check = false;
-        }
         if (checkRequiredInputs()){
             $('.js-buyer').addClass('complete');
         } else{
@@ -485,6 +430,48 @@ window.onload = function() {
     }
 
     $('.js-required-input').bind('input', function() {
+        checkAll();
+    });
+
+    $(document).on('click','.js-about-time', function(e){
+        let index = Number($(this).data('index'));
+        $('.js-about-time').removeClass('active');
+        $(this).addClass('active');
+        $('.js-about-time-tab').removeClass('active');
+        $('.js-about-time-tab').addClass(function (i){
+            if (i==index){
+                return 'active';
+            }
+        });
+    });
+
+    $(document).on('click','.js-checkout-head', function(e){
+        e.stopPropagation();
+        let startElement = $(this);
+        $('.js-checkout-head').each(function(index, element){
+            console.log ($(this));
+            console.log(startElement);
+            if ($(element).get(0) == startElement.get(0)){
+                $(this).parents('.js-checkout-category').toggleClass('closed');
+                return false;
+            } else{
+                if ($(element).parents('.js-checkout-category').hasClass('complete')){
+
+                }else{
+                    return false;
+                }
+            }
+        })
+    });
+
+    $(document).on('click','.js-checkout-next', function(e){
+        e.preventDefault();
+        $(this).parents('.js-checkout-category').addClass('closed complete');
+        $('.js-checkout-category').not('.complete').first().removeClass('closed');
+    });
+    
+    $(document).on('click','.js-accept', function(e){
+        e.stopPropagation();
         checkAll();
     });
 };

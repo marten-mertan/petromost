@@ -3663,15 +3663,16 @@ a.show-readmore, a.hide-readmore {
                 }
 
                 &.complete{
-                    .checkout-categories-item-head{
-                        background-color: #e0e5e7;
-                    }
                     .checkout-categories-item-body-details{
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-
                     }
+                }
+            }
+            &.complete{
+                .checkout-categories-item-head{
+                    background-color: #e0e5e7;
                 }
             }
             
@@ -3756,7 +3757,7 @@ a.show-readmore, a.hide-readmore {
                 &-row{
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
+                    align-items: stretch;
                     @media screen and (max-width: 720px){
                         flex-direction: column;
                     }
@@ -3765,7 +3766,7 @@ a.show-readmore, a.hide-readmore {
                     position: relative;
                     display: block;
                     width: 207px;
-                    height: 96px;
+                    min-height: 100%;
                     margin-right: 26px;
                     @media screen and (max-width: 720px){
                         width: 100%;
@@ -3789,6 +3790,7 @@ a.show-readmore, a.hide-readmore {
                                 }
                                 .checkout-categories-item-body-option__text{
                                     color: #5f6269;
+                                    text-align: center;
                                 }
                             }
                         }
@@ -3803,8 +3805,9 @@ a.show-readmore, a.hide-readmore {
                         background-color: white;
                         text-decoration: none;
                         width: 100%;
-                        height: 100%;
+                        min-height: 100%;
                         box-sizing: border-box;
+                        padding: 20px;
                         cursor: pointer;
                         &:hover{
                             background-color: #e0e5e7;
@@ -3816,6 +3819,7 @@ a.show-readmore, a.hide-readmore {
                             }
                             .checkout-categories-item-body-option__text{
                                 color: #5f6269;
+                                text-align: center;
                             }
                         }
                     }
@@ -3845,6 +3849,7 @@ a.show-readmore, a.hide-readmore {
                         line-height: 13px;
                         color: black;
                         text-transform: uppercase;
+                        text-align: center;
                     }
                 }
                 &-delivery{
