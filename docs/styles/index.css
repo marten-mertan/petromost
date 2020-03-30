@@ -3770,9 +3770,8 @@ a.show-readmore, a.hide-readmore {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
-    -webkit-box-align: center;
-            align-items: center;
     font-size: 16px;
+    line-height: 23px;
     color: #232833;
     margin-left: 24px;
     cursor: pointer; }
