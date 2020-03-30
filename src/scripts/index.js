@@ -269,5 +269,37 @@ window.onload = function() {
         $('.js-cart-all').addClass('mod-hide');
 
     });
+
+    // checkout
+    $(document).on('click','.js-about-time', function(e){
+        let index = Number($(this).data('index'));
+        $('.js-about-time').removeClass('active');
+        $(this).addClass('active');
+        $('.js-about-time-tab').removeClass('active');
+        $('.js-about-time-tab').addClass(function (i){
+            if (i==index){
+                return 'active';
+            }
+        });
+    });
+
+    $(document).on('click','.js-checkout-head', function(e){
+        if ($(this).parents('.js-checkout-category').hasClass('complete')){
+
+        } else{
+            e.stopPropagation();
+            $(this).parents('.js-checkout-category').toggleClass('closed');
+        }
+    });
+
+    $(document).on('click','.js-checkout-next', function(e){
+        e.preventDefault();
+        $(this).parents('.js-checkout-category').addClass('closed complete');
+        $('.js-checkout-category').not('.complete').first().removeClass('closed');
+    });
     
+    $(document).on('click','.js-accept', function(e){
+        e.stopPropagation();
+        $('.js-checkout-button').addClass('active');
+    });
 };
