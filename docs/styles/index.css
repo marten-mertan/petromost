@@ -3522,19 +3522,19 @@ a.show-readmore, a.hide-readmore {
             color: #5f6269;
             text-align: center; }
       .checkout-categories-item-body .checkout-categories-item-body-option__icon {
-        width: 32px;
+        width: auto;
         height: 25px;
         margin-bottom: 19px; }
         .checkout-categories-item-body .checkout-categories-item-body-option__icon svg {
-          width: 32px;
+          width: auto;
           height: 25px; }
       .checkout-categories-item-body .checkout-categories-item-body-option__icon-hover {
         display: none;
-        width: 32px;
+        width: auto;
         height: 25px;
         margin-bottom: 19px; }
         .checkout-categories-item-body .checkout-categories-item-body-option__icon-hover svg {
-          width: 32px;
+          width: auto;
           height: 25px;
           fill: #5f6269; }
       .checkout-categories-item-body .checkout-categories-item-body-option__text {

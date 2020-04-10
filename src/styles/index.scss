@@ -3825,21 +3825,21 @@ a.show-readmore, a.hide-readmore {
                     }
                     
                     &__icon{
-                        width: 32px;
+                        width: auto;
                         height: 25px;
                         margin-bottom: 19px;
                         svg{
-                            width: 32px;
+                            width: auto;
                             height: 25px;
                         }
                     }
                     &__icon-hover{
                         display: none;
-                        width: 32px;
+                        width: auto;
                         height: 25px;
                         margin-bottom: 19px;
                         svg{
-                            width: 32px;
+                            width: auto;
                             height: 25px;
                             fill: #5f6269;
                         }
