@@ -449,8 +449,6 @@ window.onload = function() {
         e.stopPropagation();
         let startElement = $(this);
         $('.js-checkout-head').each(function(index, element){
-            console.log ($(this));
-            console.log(startElement);
             if ($(element).get(0) == startElement.get(0)){
                 $(this).parents('.js-checkout-category').toggleClass('closed');
                 return false;

@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 22px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+table {
+  border-collapse: separate;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  font-size: 22px;
+  line-height: 1; }
+
+.body {
+  width: 100%; }
+
+.container {
+  vertical-align: top;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1240px;
+  width: 1240px; }
+
+.content {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 1240px; }
+
+.footer {
+  clear: both;
+  margin-top: 5px;
+  width: 100%;
+  background-color: #f8f8f8; }
+  .footer-block {
+    vertical-align: top;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000;
+    text-align: left;
+    padding: 14px 60px; }
+  .footer-logo {
+    float: left;
+    margin-right: 20px; }
+
+.wrapper {
+  display: block;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box; }
+
+.main {
+  border-collapse: separate;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  width: 100%;
+  background: #fff;
+  padding: 30px; }
+  .main-header {
+    padding: 0 30px 26px;
+    border-bottom: 1px solid #000; }
+    .main-header-block {
+      padding: 6px 0; }
+  .main-title {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 35px; }
+  .main-items {
+    border-collapse: collapse; }
+    .main-items thead {
+      font-weight: bold; }
+    .main-items tr {
+      border-bottom: 1px solid #d0d0d0; }
+      .main-items tr:nth-child(2n) {
+        background-color: #f8f8f8; }
+    .main-items td {
+      padding: 12px 50px; }
+      .main-items td:first-child {
+        padding-left: 30px;
+        padding-right: 16px; }
+      .main-items td:nth-child(2) {
+        padding-left: 16px;
+        padding-right: 18px; }
+      .main-items td:nth-child(3) {
+        padding-left: 18px; }
+      .main-items td:last-child {
+        padding-right: 30px; }
+  .main-person {
+    padding-bottom: 44px; }
+    .main-person td {
+      padding: 28px 30px; }
+  .main-delivery {
+    line-height: 1.2;
+    border-collapse: collapse; }
+    .main-delivery td {
+      padding: 13px 30px;
+      border: 1px solid #d0d0d0; }
+  .main-total {
+    padding-bottom: 52px; }
+    .main-total td {
+      padding: 13px 30px; }
+  .main-sign {
+    border-collapse: separate;
+    border-spacing: 30px 12px;
+    text-align: center; }
+    .main-sign tr:first-child td {
+      border-bottom: 1px solid #000; }
+
+.mod-bold {
+  font-weight: bold; }
