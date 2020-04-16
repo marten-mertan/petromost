@@ -64,14 +64,14 @@ table {
   .main-header {
     padding: 0 30px 26px;
     border-bottom: 1px solid #000; }
+    .main-header-title {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 16px; }
     .main-header-block {
       padding: 6px 0; }
-  .main-title {
-    font-size: 28px;
-    line-height: 1;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 35px; }
   .main-items {
     border-collapse: collapse; }
     .main-items thead {
