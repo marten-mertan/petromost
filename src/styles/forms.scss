@@ -92,12 +92,16 @@ table{
         }
         tr{
             border-bottom: 1px solid #d0d0d0;
+            page-break-inside: avoid;
+            page-break-after: auto;
             &:nth-child(2n){
                 background-color: #f8f8f8;
             }
         }
         td{
             padding: 8px 30px;
+            page-break-inside: avoid;
+            page-break-after: auto;
             &:first-child{
                 padding-left: 20px;
                 padding-right: 12px;
@@ -123,9 +127,22 @@ table{
     &-delivery{
         line-height: 1.2;
         border-collapse: collapse;
+        page-break-after: auto;
+        tr{
+            page-break-inside: avoid;
+            page-break-after: auto;
+        }
         td{
             padding: 13px 20px;
             border: 1px solid #d0d0d0;
+            page-break-inside: avoid;
+            page-break-after: auto;
+        }
+        thead {
+            page-break-inside: avoid;
+        }
+        tbody{
+            page-break-inside: avoid;
         }
     }
     &-total{
