@@ -4197,6 +4197,7 @@ a.show-readmore, a.hide-readmore {
 .payment-yandex{
     background-color: #f3f3f3;
     padding: 20px 38px 28px;
+    margin-bottom: 16px;
     &__row{
         display: flex;
         flex-direction: row;
@@ -4266,9 +4267,24 @@ a.show-readmore, a.hide-readmore {
             text-transform: uppercase;
             text-decoration: none;
             cursor: pointer;
+            &:hover{
+                text-decoration: none;
+            }
             @media screen and (max-width: 869px){
                 margin-bottom: 12px;
             }
         }
+    }
+}
+
+.text-row{
+    margin-bottom: 18px;
+}
+
+.content__fonts{
+    .fonts-link{
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
     }
 }

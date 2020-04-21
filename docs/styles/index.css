@@ -3854,7 +3854,8 @@ a.show-readmore, a.hide-readmore {
 
 .payment-yandex {
   background-color: #f3f3f3;
-  padding: 20px 38px 28px; }
+  padding: 20px 38px 28px;
+  margin-bottom: 16px; }
   .payment-yandex__row {
     display: -webkit-box;
     display: flex;
@@ -3931,6 +3932,16 @@ a.show-readmore, a.hide-readmore {
       text-transform: uppercase;
       text-decoration: none;
       cursor: pointer; }
+      .payment-yandex-submit .payment-yandex-submit__btn:hover {
+        text-decoration: none; }
       @media screen and (max-width: 869px) {
         .payment-yandex-submit .payment-yandex-submit__btn {
           margin-bottom: 12px; } }
+
+.text-row {
+  margin-bottom: 18px; }
+
+.content__fonts .fonts-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline; }
