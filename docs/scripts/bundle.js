@@ -472,6 +472,44 @@ window.onload = function() {
         e.stopPropagation();
         checkAll();
     });
+
+    //checkout-pies
+    if ($('.js-datepicker').length){
+        const $today = new Date();
+        const $todayMax = new Date();
+        const $dayPeriod = +($today.getDate() + 2);
+        $todayMax.setDate(+$dayPeriod);
+        $('.js-datepicker').datepicker({
+            startDate: $today,
+            toggleSelected: false,
+            minDate: $today,
+            maxDate: $todayMax,
+        }).data('datepicker').selectDate($today);
+
+        $(document).on('click','.datepicker--cell-day:not(.-disabled-)', function(e){
+            let startElementDate = $(this).data('date');
+            let tabs = $('.js-pies-time-tab');
+            tabs.removeClass('active');
+            $('.datepicker--cell-day:not(.-disabled-)').each((index, element) => {
+                if ($(element).data('date') == startElementDate){
+                    tabs.addClass(function (i){
+                        if (i==index){
+                            return 'active';
+                        }
+                    });
+                }
+            });
+        });
+    }
+    $(document).on('click','.js-accept-pies', function(e){
+        e.stopPropagation();
+        if ($('.js-accept-pies input:checked').length){
+            $('.js-pies-checkout-button').addClass('active');
+        } else{
+            $('.js-pies-checkout-button').removeClass('active');
+        }
+    });
+    
 };
 
 /***/ })

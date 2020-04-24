@@ -3945,3 +3945,209 @@ a.show-readmore, a.hide-readmore {
   font-size: 18px;
   font-weight: bold;
   text-decoration: underline; }
+
+.checkout-categories-item-pies {
+  margin-bottom: 44px; }
+  @media screen and (max-width: 720px) {
+    .checkout-categories-item-pies {
+      margin-bottom: 20px; } }
+
+.checkout-categories-item-pie {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 26px 0 22px;
+  border-bottom: 1px solid #f3f3f3; }
+  @media screen and (max-width: 720px) {
+    .checkout-categories-item-pie {
+      padding: 14px 0 10px; } }
+  .checkout-categories-item-pie:first-child {
+    padding-top: 0; }
+  .checkout-categories-item-pie-left {
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    width: 140px;
+    margin-right: 18px;
+    box-sizing: border-box; }
+    @media screen and (max-width: 720px) {
+      .checkout-categories-item-pie-left {
+        width: 100px; } }
+  .checkout-categories-item-pie__img {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .checkout-categories-item-pie__img img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      -o-object-fit: contain;
+         object-fit: contain; }
+  .checkout-categories-item-pie-right {
+    -webkit-box-flex: 1;
+            flex: 1 1 auto; }
+    .checkout-categories-item-pie-right p {
+      margin-bottom: 9px; }
+  .checkout-categories-item-pie__title {
+    font-size: 17px;
+    line-height: 1.2;
+    color: #444444;
+    font-weight: bold; }
+  .checkout-categories-item-pie__weight {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: normal; }
+  .checkout-categories-item-pie__subtitle {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #444444; }
+  .checkout-categories-item-pie__info {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #444444;
+    font-style: italic; }
+  .checkout-categories-item-pie__numbers {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #232833;
+    font-weight: bold; }
+  .checkout-categories-item-pie__amount {
+    display: inline-block;
+    margin-right: 8px; }
+  .checkout-categories-item-pie__price {
+    display: inline-block;
+    margin-left: 8px; }
+
+.checkout-categories-item-pies-datepicker {
+  margin-right: 28px; }
+  @media screen and (max-width: 720px) {
+    .checkout-categories-item-pies-datepicker {
+      margin-right: 0; } }
+  .checkout-categories-item-pies-datepicker .datepicker {
+    width: 260px; }
+    @media screen and (max-width: 720px) {
+      .checkout-categories-item-pies-datepicker .datepicker {
+        width: 100%; } }
+    .checkout-categories-item-pies-datepicker .datepicker--nav {
+      display: -webkit-box;
+      display: flex; }
+    .checkout-categories-item-pies-datepicker .datepicker--cell {
+      height: 36px;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      background-color: #ececec;
+      color: #aeaeae; }
+      .checkout-categories-item-pies-datepicker .datepicker--cell.-current- {
+        color: #aeaeae; }
+      .checkout-categories-item-pies-datepicker .datepicker--cell.-selected- {
+        background-color: #5ab55e;
+        color: #fff; }
+      .checkout-categories-item-pies-datepicker .datepicker--cell.-disabled- {
+        background-color: #fff; }
+      .checkout-categories-item-pies-datepicker .datepicker--cell.-other-month- {
+        color: #dedede; }
+
+.checkout-categories-item-pies-time {
+  margin-bottom: 28px; }
+  .checkout-categories-item-pies-time-head {
+    margin: 12px 0 8px; }
+    .checkout-categories-item-pies-time-head__text {
+      font-size: 14px;
+      line-height: 1;
+      color: #d9d9d9;
+      font-weight: bold;
+      text-transform: uppercase; }
+
+.checkout-categories-item-pies-options {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row; }
+  @media screen and (max-width: 720px) {
+    .checkout-categories-item-pies-options {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+
+.checkout-categories-item-pies-input {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 20px; }
+  .checkout-categories-item-pies-input .profile-content-form__input input {
+    padding: 15px 12px 7px; }
+
+.checkout-categories-item-pies-acception {
+  margin-bottom: 20px; }
+  .checkout-categories-item-pies-acception .checkout-acception {
+    margin: 0; }
+    .checkout-categories-item-pies-acception .checkout-acception label {
+      margin: 0; }
+
+.checkout-categories-item-pies-button {
+  width: 224px; }
+  @media screen and (max-width: 720px) {
+    .checkout-categories-item-pies-button {
+      margin: 0 auto; } }
+  .checkout-categories-item-pies-button .checkout-categories-item-pies-button__btn {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-radius: 32px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #dedede;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    cursor: default; }
+    .checkout-categories-item-pies-button .checkout-categories-item-pies-button__btn.active {
+      background-color: #5ab55e;
+      color: white;
+      cursor: pointer; }
+
+.checkout-categories-item-pies-order {
+  margin-bottom: 30px; }
+
+.checkout-categories-item-pies-bottom {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  margin-top: 12px; }
+  .checkout-categories-item-pies-bottom .checkout-categories-item-pies-bottom__btn {
+    display: block;
+    padding: 14px 16px 14px 24px;
+    text-align: center;
+    background-color: #5f6269;
+    border-radius: 21px;
+    font-size: 13px;
+    line-height: 13px;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer; }
+    .checkout-categories-item-pies-bottom .checkout-categories-item-pies-bottom__btn:last-child {
+      margin-left: auto; }
