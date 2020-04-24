@@ -3743,13 +3743,13 @@ a.show-readmore, a.hide-readmore {
             flex-direction: row; }
     .checkout-aside-button .checkout-aside-button__btn {
       display: block;
-      padding: 23px;
+      padding: 20px;
       width: 100%;
       text-align: center;
       background-color: #f6f6f6;
       border-radius: 32px;
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 14px;
+      line-height: 14px;
       font-weight: bold;
       color: #dedede;
       text-transform: uppercase;
@@ -3803,12 +3803,12 @@ a.show-readmore, a.hide-readmore {
               flex-direction: column; } }
   .checkout-bottom .checkout-bottom__back {
     display: block;
-    padding: 23px 90px;
+    padding: 18px 76px;
     text-align: center;
     background-color: #fff;
     border-radius: 32px;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: bold;
     color: #5f6269;
     text-transform: uppercase;
@@ -3824,12 +3824,12 @@ a.show-readmore, a.hide-readmore {
         margin-bottom: 16px; } }
   .checkout-bottom .checkout-bottom__btn {
     display: block;
-    padding: 23px 56px;
+    padding: 19px 46px;
     text-align: center;
     background-color: #f6f6f6;
     border-radius: 32px;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: bold;
     color: #dedede;
     text-transform: uppercase;
@@ -3947,7 +3947,7 @@ a.show-readmore, a.hide-readmore {
   text-decoration: underline; }
 
 .checkout-categories-item-pies {
-  margin-bottom: 44px; }
+  margin-bottom: 32px; }
   @media screen and (max-width: 720px) {
     .checkout-categories-item-pies {
       margin-bottom: 20px; } }
@@ -4106,13 +4106,13 @@ a.show-readmore, a.hide-readmore {
       margin: 0 auto; } }
   .checkout-categories-item-pies-button .checkout-categories-item-pies-button__btn {
     display: block;
-    padding: 20px;
+    padding: 19px 46px;
     width: 100%;
     text-align: center;
     background-color: #f6f6f6;
     border-radius: 32px;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: bold;
     color: #dedede;
     text-transform: uppercase;
@@ -4151,3 +4151,11 @@ a.show-readmore, a.hide-readmore {
     cursor: pointer; }
     .checkout-categories-item-pies-bottom .checkout-categories-item-pies-bottom__btn:last-child {
       margin-left: auto; }
+
+.checkout-categories-item-pies__title {
+  font-size: 14px;
+  line-height: 16px;
+  color: #d9d9d9;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0; }
