@@ -322,10 +322,7 @@ window.onload = function() {
     }
     function checkAll(){
         let check = true;
-        if (checkRequiredInputs()){
-            $('.js-buyer').addClass('complete');
-        } else{
-            $('.js-buyer').removeClass('complete');
+        if (!checkRequiredInputs()){
             check = false;
         }
         if (!checkAcceptPolicy()){
@@ -355,27 +352,33 @@ window.onload = function() {
         });
     });
 
-    $(document).on('click','.js-checkout-head', function(e){
-        e.stopPropagation();
-        let startElement = $(this);
-        $('.js-checkout-head').each(function(index, element){
-            if ($(element).get(0) == startElement.get(0)){
-                $(this).parents('.js-checkout-category').toggleClass('closed');
-                return false;
-            } else{
-                if ($(element).parents('.js-checkout-category').hasClass('complete')){
+    // $(document).on('click','.js-checkout-head', function(e){
+    //     e.stopPropagation();
+    //     let startElement = $(this);
+    //     $('.js-checkout-head').each(function(index, element){
+    //         if ($(element).get(0) == startElement.get(0)){
+    //             $(this).parents('.js-checkout-category').toggleClass('closed');
+    //             return false;
+    //         } else{
+    //             if ($(element).parents('.js-checkout-category').hasClass('complete')){
 
-                }else{
-                    return false;
-                }
-            }
-        })
-    });
+    //             }else{
+    //                 return false;
+    //             }
+    //         }
+    //     })
+    // });
 
     $(document).on('click','.js-checkout-next', function(e){
         e.preventDefault();
         $(this).parents('.js-checkout-category').addClass('closed complete');
         $('.js-checkout-category').not('.complete').first().removeClass('closed');
+    });
+
+    $(document).on('click','.js-checkout-back', function(e){
+        e.preventDefault();
+        $(this).parents('.js-checkout-category').addClass('closed').removeClass('complete');
+        $('.js-checkout-category.complete').last().removeClass('closed complete');
     });
     
     $(document).on('click','.js-accept', function(e){
