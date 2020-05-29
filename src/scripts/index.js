@@ -426,6 +426,7 @@ window.onload = function() {
     $(document).on('click','.js-popup-mobile-close', function(e){
         e.stopPropagation();
         $(this).parents('.popup-mobile').addClass('closed');
+        $('body').removeClass('mod-overflow');
     });
     
 };

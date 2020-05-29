@@ -4805,6 +4805,8 @@ a.show-readmore, a.hide-readmore {
         background-color: #5ab55e;
         border-radius: 28px;
         padding: 11px;
+        min-height: 55px;
+        height: 55px;
         box-sizing: border-box;
         text-decoration: none;
         span{
@@ -4843,5 +4845,13 @@ a.show-readmore, a.hide-readmore {
         .basket-fly{
             display: none;
         }
+    }
+}
+
+.mod-overflow{
+    @media screen and (max-width: 720px){
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 }
