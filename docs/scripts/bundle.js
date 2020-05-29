@@ -517,6 +517,7 @@ window.onload = function() {
         e.stopPropagation();
         $(this).parents('.popup-mobile').addClass('closed');
         $('body').removeClass('mod-overflow');
+        $('html').removeClass('mod-overflow');
     });
     
 };
