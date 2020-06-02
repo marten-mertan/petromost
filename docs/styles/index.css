@@ -3432,6 +3432,8 @@ a.show-readmore, a.hide-readmore {
     @media screen and (max-width: 720px) {
       .checkout-categories-item-body {
         padding: 12px 12px 26px 12px; } }
+    .checkout-categories-item-body .checkout-acception label {
+      margin-left: 0; }
     .checkout-categories-item-body .profile-content-banner__button {
       border: none;
       padding: 11px 20px 11px 24px;

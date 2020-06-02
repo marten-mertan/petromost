@@ -462,13 +462,23 @@ window.onload = function() {
     $(document).on('click','.js-checkout-next', function(e){
         e.preventDefault();
         $(this).parents('.js-checkout-category').addClass('closed complete');
-        $('.js-checkout-category').not('.complete').first().removeClass('closed');
+        var nextEl = $('.js-checkout-category').not('.complete').first();
+        nextEl.removeClass('closed');
+        var menuHeight = 0,
+            top = nextEl.offset().top,
+            topIndent = top - menuHeight;
+        $('html').animate({scrollTop: topIndent}, 300);
     });
 
     $(document).on('click','.js-checkout-back', function(e){
         e.preventDefault();
         $(this).parents('.js-checkout-category').addClass('closed').removeClass('complete');
-        $('.js-checkout-category.complete').last().removeClass('closed complete');
+        var prevEl = $('.js-checkout-category.complete').last();
+        prevEl.removeClass('closed complete');
+        var menuHeight = 0,
+            top = prevEl.offset().top,
+            topIndent = top - menuHeight;
+        $('html').animate({scrollTop: topIndent}, 300);
     });
     
     $(document).on('click','.js-accept', function(e){
@@ -519,6 +529,17 @@ window.onload = function() {
         $('body').removeClass('mod-overflow');
         $('html').removeClass('mod-overflow');
     });
+
+    //плавный скролл
+    function scrollToAnchor (elem) {
+        $(document).on("click", elem, function (event) {
+            var id  = $(this).attr('href'),
+                menuHeight = 0,
+                top = $(id).offset().top,
+                topIndent = top - menuHeight;
+            $('html').animate({scrollTop: topIndent}, 500);
+        });
+    };
     
 };
 
