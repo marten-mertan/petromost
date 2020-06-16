@@ -171,22 +171,38 @@ window.onload = function() {
     }
     
     $('.js-minus').on('click', function(e){
-        var count = parseInt($(this).siblings('.js-input').val());
-        if (count==1){
+        var result = 0;
+        var count = Math.round($(this).siblings('.js-input').val()*100) / 100;
+        var step = Math.round($(this).siblings('.js-input').data('step')*100) / 100;
+        if (!step){
+            step = 1;
+            result = (count-step).toFixed();
+        } else{
+            result = (count-step).toFixed(1);
+        }
+        if (count<=step){
             $(this).parents('.js-good-item').removeClass('in-cart');
         }
         if (count > 0){
-            $(this).siblings('.js-input').val(count-1);
+            $(this).siblings('.js-input').val(result);
         }
     });
     $('.js-plus').on('click', function(e){
-        var count = parseInt($(this).siblings('.js-input').val());
-        var max = parseInt($(this).siblings('.js-input').data('max'));
-        if (count==0){
+        var result = 0;
+        var count = Math.round($(this).siblings('.js-input').val()*100) / 100;
+        var max = Math.round($(this).siblings('.js-input').data('max')*100) / 100;
+        var step = Math.round($(this).siblings('.js-input').data('step')*100) / 100;
+        if (!step){
+            step = 1;
+            result = (count+step).toFixed();
+        } else{
+            result = (count+step).toFixed(1);
+        }
+        if (count<=0){
             $(this).parents('.js-good-item').addClass('in-cart');
         }
         if (count < max){
-            $(this).siblings('.js-input').val(count+1);
+            $(this).siblings('.js-input').val(result);
         }
     });
 

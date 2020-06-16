@@ -1025,6 +1025,10 @@ ul.baron__scroller {
 .goods{
     &__item{
         padding: 0;
+        transition: all .4s ease;
+        &:hover{
+            box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+        }
         &_body{
             padding: 19px 17px 16px 17px;
             @media screen and (max-width: 480px){
@@ -1104,18 +1108,22 @@ ul.baron__scroller {
         }
     }
     &__middle{
-        height: 40px;
+        height: 60px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 4px;
         &-price{
             display: none;
-            font-size: 15px;
+            font-size: 16px;
             line-height: 22px;
             color: #5ab55e;
             font-weight: bold;
             text-align: center;
+            margin-bottom: 6px;
+            .unit{
+                font-size: 12px;
+            }
         }
         &-profit{
             display: none;
@@ -1123,6 +1131,17 @@ ul.baron__scroller {
             color: #444;
             text-align: center;
             line-height: 18px;
+            .all-profit{
+                font-size: 13px;
+                color: #979797;
+                margin: 0;
+            }
+            .sum-profit{
+                font-size: 13px;
+                color: #000;
+                margin: 0;
+
+            }
         }
     }
     &__bottom{
@@ -1131,12 +1150,13 @@ ul.baron__scroller {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        margin-bottom: 4px;
         &_price{
             margin-right: auto;
             &-new{
                 font-size: 13px;
                 line-height: 1;
-                color: #434d54;
+                color: #000;
                 .price{
                     font-size: 15px;
                     font-weight: bold;
@@ -1145,6 +1165,11 @@ ul.baron__scroller {
                     display: inline;
                     font-size: 13px;
                     line-height: 1;
+                }
+                .rub{
+                    font-size: 15px;
+                    font-weight: bold;
+
                 }
                 
             }
@@ -1166,8 +1191,15 @@ ul.baron__scroller {
             color: #5ab55e;
             font-weight: bold;
             width: 40px;
-            text-align: center;
+            text-align: right;
             border: none;
+        }
+        &-unit{
+            display: none;
+            width: 40px;
+            font-size: 15px;
+            color: #5ab55e;
+            margin-left: 0;
         }
         &-counter{
             display: none;
@@ -1282,6 +1314,12 @@ ul.baron__scroller {
             }
         }
     }
+    &__amount{
+        height: 22px;
+        font-size: 15px;
+        color: #757575;
+        margin: 0; 
+    }
 
 }
 .mod-attention{
@@ -1308,11 +1346,17 @@ ul.baron__scroller {
     .goods__bottom-counter{
         display: block;
     }
+    .goods__bottom-unit{
+        display: block;
+    }
     .goods__middle-price{
         display: block;
     }
     .goods__middle-profit{
         display: block;
+    }
+    .goods__amount{
+        text-align: center;
     }
 }
 
@@ -4936,4 +4980,13 @@ a.show-readmore, a.hide-readmore {
 
 .js-custom-scroll-checkout{
     position: relative;
+}
+
+.fa-check {
+    color: #5ab55e;
+    margin-right: 5px;
+}
+
+.goods__item * {
+    box-sizing: border-box;
 }
