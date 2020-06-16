@@ -72,6 +72,13 @@ window.onload = function() {
             bar: '.baron__bar'
         }).autoUpdate(); 
     }
+    if ($('.js-custom-scroll-checkout').length){
+        window.dima = baron({
+            root: '.js-custom-scroll-checkout',
+            scroller: '.baron-checkout__scroller',
+            bar: '.baron-checkout__bar'
+        }).autoUpdate(); 
+    }
     
     $('.js-minus').on('click', function(e){
         var count = parseInt($(this).siblings('.js-input').val());
@@ -447,8 +454,24 @@ window.onload = function() {
                 menuHeight = 0,
                 top = $(id).offset().top,
                 topIndent = top - menuHeight;
-            $('html').animate({scrollTop: topIndent}, 500);
+            $('html').animate({scrollTop: topIndent}, 300);
         });
     };
+
+    //пересчет индикатора корзины
+    function cartIndicator(){
+        if ($('.js-cart-indicator').length){
+            const maxPrice = $('.js-show-cart').data('delivery-price');
+            const currentPrice = $('.js-show-cart').data('current-price');
+            const rightPercent = (1 - (currentPrice / maxPrice)) * 100;
+            if (currentPrice < maxPrice){
+                $('.js-cart-indicator').css('right', rightPercent + '%');
+            } else{
+                $('.js-cart-indicator').css('right', 0 + '%');
     
+            }
+        }
+    }
+
+    cartIndicator();
 };
