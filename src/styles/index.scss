@@ -1131,6 +1131,7 @@ ul.baron__scroller {
             color: #444;
             text-align: center;
             line-height: 18px;
+            height: 36px;
             .all-profit{
                 font-size: 13px;
                 color: #979797;
@@ -1353,7 +1354,9 @@ ul.baron__scroller {
         display: block;
     }
     .goods__middle-profit{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .goods__amount{
         text-align: center;

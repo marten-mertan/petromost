@@ -975,7 +975,8 @@ ul.baron__scroller {
     font-size: 13px;
     color: #444;
     text-align: center;
-    line-height: 18px; }
+    line-height: 18px;
+    height: 36px; }
     .goods__middle-profit .all-profit {
       font-size: 13px;
       color: #979797;
@@ -1187,7 +1188,13 @@ ul.baron__scroller {
   display: block; }
 
 .in-cart .goods__middle-profit {
-  display: block; }
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center; }
 
 .in-cart .goods__amount {
   text-align: center; }
