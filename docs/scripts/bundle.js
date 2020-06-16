@@ -510,7 +510,7 @@ window.onload = function() {
             let startElementDate = $(this).data('date');
             let tabs = $('.js-pies-time-tab');
             tabs.removeClass('active');
-            $('.datepicker--cell-day:not(.-disabled-)').each((index, element) => {
+            $('.datepicker--cell-day:not(.-disabled-)').each(function(index, element){
                 if ($(element).data('date') == startElementDate){
                     tabs.addClass(function (i){
                         if (i==index){
