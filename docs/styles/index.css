@@ -166,8 +166,6 @@
       color: white;
       background-color: #97a7af;
       cursor: pointer; }
-      .header__bottom-cart.active .header__bottom-cart-content {
-        background-color: #5ab55e; }
       .header__bottom-cart a {
         color: white;
         text-decoration: none;
@@ -175,8 +173,7 @@
       .header__bottom-cart-indicator {
         display: block;
         position: absolute;
-        background: -webkit-gradient(linear, left top, right top, from(#509ec6), color-stop(79%, #3fbacc), color-stop(86%, #54c69d), color-stop(94%, #69d26d), to(#70dc75));
-        background: linear-gradient(90deg, #509ec6 0%, #3fbacc 79%, #54c69d 86%, #69d26d 94%, #70dc75 100%);
+        background: #5ab55e;
         left: 0;
         right: 100%;
         top: 0;
@@ -184,6 +181,11 @@
         z-index: 1;
         -webkit-transition: all .6s ease;
         transition: all .6s ease; }
+        .header__bottom-cart-indicator.mod-red {
+          background: #de2d42;
+          -webkit-transition: all 0s ease;
+          transition: all 0s ease;
+          right: 0 !important; }
       .header__bottom-cart-content {
         position: relative;
         padding: 15px 9px 15px 19px;
@@ -238,8 +240,7 @@
           .header__bottom-cart-baloon-indicator-background {
             display: block;
             position: absolute;
-            background: -webkit-gradient(linear, left top, right top, from(#509ec6), color-stop(79%, #3fbacc), color-stop(86%, #54c69d), color-stop(94%, #69d26d), to(#70dc75));
-            background: linear-gradient(90deg, #509ec6 0%, #3fbacc 79%, #54c69d 86%, #69d26d 94%, #70dc75 100%);
+            background: #5ab55e;
             left: 0;
             right: 100%;
             top: 0;

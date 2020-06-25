@@ -114,6 +114,7 @@ window.onload = function() {
         if (count < max){
             $(this).siblings('.js-input').val(result);
         }
+
     });
 
     $('.js-select-city-link').on('click', function(e){
@@ -481,8 +482,15 @@ window.onload = function() {
             const currentPrice = $('.js-show-cart').data('current-price');
             const rightPercent = (1 - (currentPrice / maxPrice)) * 100;
             if (currentPrice < maxPrice){
-                $('.js-cart-indicator').css('right', rightPercent + '%');
+                if (currentPrice <= 0){
+                    $('.js-cart-indicator').addClass('mod-red');
+                    $('.js-cart-indicator').css('right', 100 + '%');
+                } else{
+                    $('.js-cart-indicator').removeClass('mod-red');
+                    $('.js-cart-indicator').css('right', rightPercent + '%');
+                }
             } else{
+                $('.js-cart-indicator').removeClass('mod-red');
                 $('.js-cart-indicator').css('right', 0 + '%');
     
             }

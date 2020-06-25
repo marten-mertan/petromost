@@ -196,7 +196,7 @@
             cursor: pointer;
             &.active{
                 .header__bottom-cart-content{
-                    background-color: #5ab55e;
+                    //background-color: #5ab55e;
                 }
             }
             a{
@@ -207,13 +207,19 @@
             &-indicator{
                 display: block;
                 position: absolute;
-                background: linear-gradient( 90deg, rgb(80,158,198) 0%, rgb(63,186,204) 79%, rgb(84,198,157) 86%, rgb(105,210,109) 94%, rgb(112,220,117) 100%);
+                //background: linear-gradient( 90deg, rgb(80,158,198) 0%, rgb(63,186,204) 79%, rgb(84,198,157) 86%, rgb(105,210,109) 94%, rgb(112,220,117) 100%);
+                background: #5ab55e;
                 left: 0;
                 right: 100%;
                 top: 0;
                 bottom: 0;
                 z-index: 1;
                 transition: all .6s ease;
+                &.mod-red{
+                    background: #de2d42;
+                    transition: all 0s ease;
+                    right: 0 !important;
+                }
             }
             &-content{
                 position: relative;
@@ -276,7 +282,8 @@
                     &-background{
                         display: block;
                         position: absolute;
-                        background: linear-gradient( 90deg, rgb(80,158,198) 0%, rgb(63,186,204) 79%, rgb(84,198,157) 86%, rgb(105,210,109) 94%, rgb(112,220,117) 100%);
+                        //background: linear-gradient( 90deg, rgb(80,158,198) 0%, rgb(63,186,204) 79%, rgb(84,198,157) 86%, rgb(105,210,109) 94%, rgb(112,220,117) 100%);
+                        background: #5ab55e;
                         left: 0;
                         right: 100%;
                         top: 0;
