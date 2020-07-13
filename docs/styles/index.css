@@ -4687,6 +4687,28 @@ a.show-readmore, a.hide-readmore {
 .product-card__price-layout {
   margin-bottom: 12px; }
 
+.product-card__fav {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+  @media screen and (max-width: 680px) {
+    .product-card__fav {
+      right: 20px; } }
+  .product-card__fav svg {
+    width: 24px;
+    height: 21px;
+    fill: #fff;
+    stroke: #5f6269;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease; }
+  .product-card__fav.active svg {
+    fill: #de2d42;
+    stroke: #de2d42; }
+
 .goods__checkbox {
   display: block;
   position: relative;
@@ -4732,6 +4754,32 @@ a.show-readmore, a.hide-readmore {
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
+
+.goods__fav {
+  position: absolute;
+  right: 17px;
+  top: 68px;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+  @media screen and (max-width: 490px) {
+    .goods__fav {
+      top: 17px; } }
+  .goods__fav svg {
+    width: 24px;
+    height: 21px;
+    fill: #fff;
+    stroke: #5f6269;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease; }
+  .goods__fav.active svg {
+    fill: #de2d42;
+    stroke: #de2d42; }
+
+@media screen and (max-width: 490px) {
+  .goods__name {
+    margin-right: 32px; } }
 
 .profile-content-form-checks {
   margin-bottom: 30px;

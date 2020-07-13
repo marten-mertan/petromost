@@ -587,6 +587,10 @@ window.onload = function() {
         }
     }
 
+    $(document).on('click','.js-fav', function(e){
+        $(this).toggleClass('active');
+    });
+
     cartIndicator();
 };
 
