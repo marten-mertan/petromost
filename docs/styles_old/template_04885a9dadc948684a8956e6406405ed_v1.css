@@ -4443,12 +4443,12 @@ i.close__btn {
     width: 21px;
     height: 21px;
     margin-right: 2px;
-    background: url(/bitrix/templates/main_adaptive/img/star.png) no-repeat 50% 50%;
+    background: url(../bitrix/templates/main_adaptive/img/star.png) no-repeat 50% 50%;
     vertical-align: middle;
     cursor: pointer;
 }
 .product__star-active {
-    background: url(/bitrix/templates/main_adaptive/img/star-active.png) no-repeat 50% 50%;
+    background: url(../bitrix/templates/main_adaptive/img/star-active.png) no-repeat 50% 50%;
 }
 .product__art {
     float: right;
