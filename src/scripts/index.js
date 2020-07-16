@@ -23,7 +23,7 @@ window.onload = function() {
             $('.js-input-change-baloon').addClass('active');
         }
     });
-    $(document).on('click', function(e){
+    $(document).mousedown(function (e){
         var element = $('.js-input-change-baloon');
         var parent = $('.header__search')
         if (element.has(e.target).length === 0 && parent.has(e.target).length === 0){
@@ -39,9 +39,10 @@ window.onload = function() {
         $('.js-select-city-baloon').removeClass('active');
     });
     
-    $(document).on('click', function(e){
+    $(document).mousedown(function (e){
         var element = $('.js-select-city-baloon');
-        if (element.has(e.target).length === 0){
+        var parent = $('.js-select-city');
+        if (!element.is(e.target) && element.has(e.target).length === 0 && !parent.is(e.target)){
             element.removeClass('active');
         }
     });
@@ -50,9 +51,10 @@ window.onload = function() {
         $('.js-cart-baloon').addClass('active');
         $('.js-show-cart').addClass('active');
     });
-    $(document).on('click', function(e){
+    $(document).mousedown(function (e){
         var element = $('.js-cart-baloon');
-        if (element.has(e.target).length === 0){
+        var parent = $('.js-show-cart');
+        if (!element.is(e.target) && element.has(e.target).length === 0 && parent.has(e.target).length === 0){
             element.removeClass('active');
             $('.js-show-cart').removeClass('active');
         }
