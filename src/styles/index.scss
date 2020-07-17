@@ -3892,6 +3892,7 @@ a.show-readmore, a.hide-readmore {
                     display: flex;
                     flex-direction: row;
                     align-items: stretch;
+                    flex-wrap: wrap;
                     @media screen and (max-width: 720px){
                         flex-direction: column;
                     }
@@ -3901,7 +3902,7 @@ a.show-readmore, a.hide-readmore {
                     display: block;
                     width: 207px;
                     min-height: 100%;
-                    margin-right: 26px;
+                    margin: 0 26px 12px 0;
                     @media screen and (max-width: 720px){
                         width: 100%;
                         max-width: 300px;
@@ -3988,6 +3989,9 @@ a.show-readmore, a.hide-readmore {
                 }
                 &-delivery{
                     margin-left: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
                     &__text{
                         font-size: 14px;
                         line-height: 17px;
