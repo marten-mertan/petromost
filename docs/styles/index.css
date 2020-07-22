@@ -4860,3 +4860,101 @@ a.show-readmore, a.hide-readmore {
     border-radius: 50%;
     -webkit-transition: all .4s ease;
     transition: all .4s ease; }
+
+.popup-age .mfp-content {
+  width: 100%;
+  max-width: 340px; }
+
+.popup-age .c-popup {
+  border-radius: 20px;
+  padding: 3px;
+  -webkit-transform: none;
+          transform: none; }
+  .popup-age .c-popup__body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    border: 1px solid #c7c7c7;
+    border-radius: 20px;
+    padding: 38px 26px 38px; }
+
+.popup-age__title {
+  font-size: 30px;
+  line-height: 20px;
+  color: #de2d42;
+  text-align: center;
+  margin-bottom: 25px; }
+
+.popup-age__text {
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  text-align: center;
+  margin-bottom: 27px; }
+
+.popup-age-buttons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center; }
+  .popup-age-buttons a {
+    text-decoration: none; }
+  .popup-age-buttons__btn {
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    background: #ced4d7;
+    border-radius: 16px;
+    display: inline-block;
+    border: none;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 9px 12px 10px;
+    width: 70px;
+    box-sizing: border-box; }
+    .popup-age-buttons__btn.active {
+      background: #5ab55e; }
+    .popup-age-buttons__btn:not(:last-child) {
+      margin-right: 30px; }
+
+.popup-age__close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-size: 10px 11px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px; }
+  .popup-age__close:after {
+    content: '';
+    border: none;
+    position: absolute;
+    top: 15px;
+    left: 6px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 19px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #000; }
+  .popup-age__close:before {
+    content: '';
+    border: none;
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 19px;
+    width: 2px;
+    border-radius: 20px;
+    background-color: #000; }

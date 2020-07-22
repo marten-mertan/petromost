@@ -594,6 +594,9 @@ window.onload = function() {
     });
 
     cartIndicator();
+
+    //попап для проверки 18+
+    //showPopup('.js-for-adults','.popup-age');
 };
 
 /***/ })
