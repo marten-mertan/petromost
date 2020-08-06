@@ -189,7 +189,13 @@ window.onload = function() {
             $(this).siblings('.js-input').val(result);
         }
     });
+
+    var ageModalCallback = function(){
+        return 0;
+    };
+
     $('.js-plus').on('click', function(e){
+        var $this = $(this);
         var result = 0;
         var count = Math.round($(this).siblings('.js-input').val()*100) / 100;
         var max = Math.round($(this).siblings('.js-input').data('max')*100) / 100;
@@ -200,13 +206,29 @@ window.onload = function() {
         } else{
             result = (count+step).toFixed(1);
         }
-        if (count<=0){
-            $(this).parents('.js-good-item').addClass('in-cart');
+        if ($(this).hasClass('js-for-adults')){
+            if (count<=0){
+                ageModalCallback = function(){
+                    e.preventDefault();
+                    $('.js-plus').removeClass('js-for-adults');
+                    $this.parents('.js-good-item').addClass('in-cart');
+                    if (count < max){
+                        $this.siblings('.js-input').val(result);
+                    }
+                }
+            }
+        } else{
+            if (count<=0){
+                $(this).parents('.js-good-item').addClass('in-cart');
+            }
+            if (count < max){
+                $(this).siblings('.js-input').val(result);
+            }
         }
-        if (count < max){
-            $(this).siblings('.js-input').val(result);
-        }
-
+    });
+    
+    $('.js-age-accept').on('click', function(e){
+        ageModalCallback();
     });
 
     $('.js-select-city-link').on('click', function(e){
@@ -596,7 +618,8 @@ window.onload = function() {
     cartIndicator();
 
     //попап для проверки 18+
-    //showPopup('.js-for-adults','.popup-age');
+    showPopup('.js-for-adults','.popup-age');
+
 };
 
 /***/ })
