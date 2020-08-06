@@ -5266,6 +5266,7 @@ a.show-readmore, a.hide-readmore {
 }
 
 .popup-age{
+    z-index: 10000;
     .mfp-content{
         width: 100%;
         max-width: 340px;
