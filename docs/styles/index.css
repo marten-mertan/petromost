@@ -5109,7 +5109,8 @@ a.show-readmore, a.hide-readmore {
   height: 4px;
   background: #a9ce29;
   border-radius: 2px;
-  z-index: 1; }
+  z-index: 1;
+  cursor: pointer; }
 
 .ui-slider-handle {
   position: absolute;
@@ -5119,4 +5120,5 @@ a.show-readmore, a.hide-readmore {
   border-radius: 50%;
   z-index: 2;
   top: -12px;
-  margin-left: -15px; }
+  margin-left: -15px;
+  cursor: pointer; }

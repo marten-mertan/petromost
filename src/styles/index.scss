@@ -5523,6 +5523,7 @@ a.show-readmore, a.hide-readmore {
     background: #a9ce29;
     border-radius: 2px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .ui-slider-handle {
@@ -5534,5 +5535,6 @@ a.show-readmore, a.hide-readmore {
     z-index: 2;
     top: -12px;
     margin-left: -15px;
+    cursor: pointer;
 }
 
