@@ -1202,139 +1202,172 @@
                     </div>
                     <div class="purchases-categories js-categories active">
                         <div class="purchases-categories-top">
-                            <div class="purchases-categories-top__button js-show-categories">
+                            <a href="#filter-list" class="purchases-categories-top__button js-show-categories">
                                 <span>Категории</span>
-                            </div>
+                            </a>
+                            <a href="#filter-price" class="purchases-categories-top__button js-show-categories active">
+                                <span>Цена и размер скидки</span>
+                            </a>
                         </div>
                         <div class="purchases-categories-body">
-                            <ul class="catalog-filter__list">
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Сладкие Новогодние подарки</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Кондитерские изделия</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Для детей</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Наши Марки</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Крупы, макароны, бакалея</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Для животных</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Фрукты, овощи</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Консервация</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Диабетические продукты</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Хлеб и хлебобулочные изделия</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Напитки безалкогольные</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Гигиена и косметика</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Молочные продукты, сыры, яйцо</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Чай, кофе, какао</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Бытовая химия и товары для дома</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Мясо, птица, колбасы</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Снеки</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Непродовольственные товары</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Рыба, икра, морепродукты</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Масло растительное, соусы, специи, приправы</span>
-                                    </label>
-                                </li>
-                                <li class="catalog-filter__item">
-                                    <label>
-                                        <input type="checkbox" name="sections[]" class="checkbox">
-                                        <span class="checkbox"></span><span>Готовые блюда, замороженные готовые блюда</span>
-                                    </label>
-                                </li>
-                            </ul>
+                            <div id="filter-list" class="purchases-categories-body-list js-categories-tab">
+                                <ul class="catalog-filter__list">
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Сладкие Новогодние подарки</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Кондитерские изделия</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Для детей</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Наши Марки</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Крупы, макароны, бакалея</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Для животных</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Фрукты, овощи</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Консервация</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Диабетические продукты</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Хлеб и хлебобулочные изделия</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Напитки безалкогольные</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Гигиена и косметика</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Молочные продукты, сыры, яйцо</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Чай, кофе, какао</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Бытовая химия и товары для дома</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Мясо, птица, колбасы</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Снеки</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Непродовольственные товары</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Рыба, икра, морепродукты</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Масло растительное, соусы, специи, приправы</span>
+                                        </label>
+                                    </li>
+                                    <li class="catalog-filter__item">
+                                        <label>
+                                            <input type="checkbox" name="sections[]" class="checkbox">
+                                            <span class="checkbox"></span><span>Готовые блюда, замороженные готовые блюда</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="filter-price" class="purchases-categories-body-sale js-categories-tab active">
+                                <div class="purchases-categories-slider-wrap">
+                                    <div class="purchases-categories-slider-inputs">
+                                        <div class="purchases-categories-slider-field">
+                                            <label class="purchases-categories-slider-label">
+                                                <input type="text" name="purchases-categories-slider-min" class="purchases-categories-slider-input js-slider-min" value="0" min="0" max="5000">
+                                                <span>От</span>
+                                            </label>
+                                        </div>
+                                        <div class="purchases-categories-slider-field">
+                                            <label class="purchases-categories-slider-label">
+                                                <input type="text" name="purchases-categories-slider-max" class="purchases-categories-slider-input js-slider-max" value="5000" min="0" max="5000">
+                                                <span>До</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="purchases-categories-slider js-slider-filter" data-min="0" data-max="5000">
+                                    </div>
+                                </div>
+                                <div class="purchases-categories-sale-wrap">
+                                    <div class="purchases-categories-sale__text">Размер скидки</div>
+                                    <div class="purchases-categories-sale-buttons js-purchases-buttons">
+                                        <a class="purchases-categories-sale__btn js-purchases-btn">По убыванию</a>
+                                        <a class="purchases-categories-sale__btn js-purchases-btn active">По возрастанию</a>
+                                    </div>
+                                </div>
+                            </div>
 
                             <span class="purchases-categories-body__button js-remove-categories">
                                 Сбросить фильтр
@@ -4500,6 +4533,10 @@
     <!--<script src="--><!--/js/readmore.js"></script>-->
     <script src="scripts_old/new-scripts.js"></script>
     <script src="scripts_old/product-card.js"></script>
+
+    <script src="scripts/vendor/jquery-ui.min.js"></script>
+    <script src="scripts/vendor/jquery.ui.touch-punch.min.js"></script>
+
 
     <script>
 

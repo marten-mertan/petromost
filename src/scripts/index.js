@@ -224,12 +224,23 @@ window.onload = function() {
     });
 
     // страница "Товары недели"
-    $(document).on('click','.js-show-categories', function(e){
+    $(document).on('click','.js-show-categories.active', function(e){
+        e.preventDefault();
         $('.js-categories').toggleClass("active");
+    });
+    $(document).on('click','.js-show-categories:not(.active)', function(e){
+        e.preventDefault();
+        let ref = $(this).attr('href')
+        $('.js-categories').addClass("active");
+        $('.js-categories-tab').removeClass('active');
+        $(ref).addClass('active');
+        $('.js-show-categories').removeClass('active');
+        $(this).addClass('active');
     });
     $(document).on('click','.js-remove-categories', function(e){
         var items = [];
         showLoader();
+        
         $.ajax({
             method: 'POST',
             data: {
@@ -240,6 +251,12 @@ window.onload = function() {
                 $('#replace').html(res);
                 setAllHeight();
                 $('.catalog-filter__list .checkbox').prop('checked', false);
+                $( '.js-slider-filter' ).slider( 'values', 0, Number($( ".js-slider-filter" ).data('min')));
+                $( '.js-slider-filter' ).slider( 'values', 1, Number($( ".js-slider-filter" ).data('max')));
+                $( '.js-slider-min' ).val(Number($( ".js-slider-filter" ).data('min')));
+                $( '.js-slider-max' ).val(Number($( ".js-slider-filter" ).data('max')));
+                $('.js-purchases-btn').removeClass('active');
+                $('.js-purchases-btn').first().addClass('active');
                 endLoader();
             }
         })
@@ -530,4 +547,59 @@ window.onload = function() {
     //попап для проверки 18+
     showPopup('.js-for-adults','.popup-age');
 
+    
+    if ($('.js-slider-filter').length){
+        $( ".js-slider-filter" ).slider({
+            range: true,
+            min: Number($( ".js-slider-filter" ).data('min')),
+            max: Number($( ".js-slider-filter" ).data('max')),
+            values: [ Number($( ".js-slider-filter" ).data('min')), Number($( ".js-slider-filter" ).data('max')) ],
+            slide: function( event, ui ) {
+                $( ".js-slider-min" ).val( ui.values[ 0 ]);
+                $( ".js-slider-max" ).val( ui.values[ 1 ]);
+                $('.js-filter-decor').addClass('active');
+                $('.js-filter-clear').addClass('active');
+            }
+        });
+    }
+    $(document).on('change','.js-slider-min', function(e){
+        let value = Number($( ".js-slider-min" ).val());
+        let min = Number($( ".js-slider-min" ).attr('min'));
+        let max = Number($( ".js-slider-max" ).val());
+        if (value > max){
+            value = max;
+            $( ".js-slider-min" ).val(value);
+        }
+        if (value < min){
+            value = min;
+            $( ".js-slider-min" ).val(value);
+        }
+        $( ".js-slider-filter" ).slider( "values", 0, value);
+        $('.js-filter-decor').addClass('active');
+        $('.js-filter-clear').addClass('active');
+
+    });
+    $(document).on('change','.js-slider-max', function(e){
+        let value = Number($( ".js-slider-max" ).val());
+        let min = Number($( ".js-slider-min" ).val());
+        let max = Number($( ".js-slider-max" ).attr('max'));
+        console.log(max);
+        if (value < min){
+            value = min;
+            $( ".js-slider-max" ).val(value);
+        }
+        if (value > max){
+            value = max;
+            $( ".js-slider-max" ).val(value);
+        }
+        $( ".js-slider-filter" ).slider( 'values', 1, value);
+        $('.js-filter-decor').addClass('active');
+        $('.js-filter-clear').addClass('active');
+
+    });
+    
+    $(document).on('click','.js-purchases-btn', function(e){
+        $(this).parents('.js-purchases-buttons').find('.js-purchases-btn').removeClass('active');
+        $(this).addClass('active');
+    });
 };
