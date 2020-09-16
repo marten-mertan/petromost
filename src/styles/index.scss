@@ -964,10 +964,30 @@
     &-row{
         display: flex;
         flex-direction: row;
-        padding: 8px 20px 15px;
+        padding: 8px 0px 15px 20px;
         margin: 0 20px;
         cursor: pointer;
         border-bottom: 1px solid #e3e3e3;
+        @media screen and (max-width: 720px){
+            flex-wrap: wrap;
+        }
+        &.in-cart{
+            .search-baloon-buttons__text{
+                display: none;
+            }
+            .search-baloon-buttons__unit{
+                display: block;
+            }
+            .search-baloon-buttons__counter{
+                display: block;
+            }
+            .mod-minus{
+                display: flex;
+            }
+            .goods__amount{
+                text-align: left;
+            }
+        }
     }
     &__img{
         background: url('../assets/img/catalog/baloon-img.png') 50% 50% no-repeat;
@@ -975,8 +995,14 @@
         background-size: contain;
         width: 68px;
         margin-right: 20px;
+        flex: 0 0 auto;
     }
     &-info{
+        flex: 1 1 auto;
+        width: 100%;
+        @media screen and (max-width: 720px){
+            width: calc(100% - 88px);
+        }
         &__top{
             font-size: 10px;
             color: #444444;
@@ -1019,7 +1045,75 @@
             margin-right: 10px;
         }
     }
-    
+    &-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 0 0 auto;
+        margin-left: 10px;
+        @media screen and (max-width: 720px){
+            flex-wrap: wrap;
+            margin-top: 12px;
+            margin-left: auto;
+        }
+
+        &__text{
+            font-size: 15px;
+            line-height: 1;
+            color: #757575;
+            font-style: italic;
+            margin-right: 8px;
+            font-weight: 300;
+
+        }
+        &__btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid #444;
+            color: #444;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 14px;
+            user-select: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+            &:hover {
+                background-color: #5ab55e;
+                border: 1px solid transparent;
+                color: white;
+                transition: background-color 0.1s, color 0.1s, border 0.1s;
+            }
+            &.mod-minus{
+                display: none;
+            }
+        }
+        &__counter{
+            display: none;
+        }
+        input {
+            font-size: 15px;
+            color: #5ab55e;
+            font-weight: bold;
+            width: 40px;
+            text-align: right;
+            border: none;
+            background-color: transparent;
+
+        }
+        &__unit{
+            display: none;
+            width: 40px;
+            font-size: 15px;
+            color: #5ab55e;
+            margin-left: 5px;
+        }
+    }
 }
 .mod-label{
     padding: 4px 8px;

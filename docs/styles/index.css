@@ -818,34 +818,57 @@
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
-    padding: 8px 20px 15px;
+    padding: 8px 0px 15px 20px;
     margin: 0 20px;
     cursor: pointer;
     border-bottom: 1px solid #e3e3e3; }
+    @media screen and (max-width: 720px) {
+      .search-baloon-row {
+        flex-wrap: wrap; } }
+    .search-baloon-row.in-cart .search-baloon-buttons__text {
+      display: none; }
+    .search-baloon-row.in-cart .search-baloon-buttons__unit {
+      display: block; }
+    .search-baloon-row.in-cart .search-baloon-buttons__counter {
+      display: block; }
+    .search-baloon-row.in-cart .mod-minus {
+      display: -webkit-box;
+      display: flex; }
+    .search-baloon-row.in-cart .goods__amount {
+      text-align: left; }
   .search-baloon__img {
     background: url("../assets/img/catalog/baloon-img.png") 50% 50% no-repeat;
     background-color: white;
     background-size: contain;
     width: 68px;
-    margin-right: 20px; }
-  .search-baloon-info__top {
-    font-size: 10px;
-    color: #444444;
-    text-decoration: underline;
-    margin-bottom: 9px; }
-  .search-baloon-info__description {
-    font-size: 13px;
-    font-style: italic;
-    margin-bottom: 7px;
-    color: #444444; }
-  .search-baloon-info__name {
-    color: #de2d42; }
-  .search-baloon-info__price {
-    font-size: 13px;
-    color: #de2d42;
-    margin-bottom: 0; }
-    .search-baloon-info__price .bold {
-      font-weight: bold; }
+    margin-right: 20px;
+    -webkit-box-flex: 0;
+            flex: 0 0 auto; }
+  .search-baloon-info {
+    -webkit-box-flex: 1;
+            flex: 1 1 auto;
+    width: 100%; }
+    @media screen and (max-width: 720px) {
+      .search-baloon-info {
+        width: calc(100% - 88px); } }
+    .search-baloon-info__top {
+      font-size: 10px;
+      color: #444444;
+      text-decoration: underline;
+      margin-bottom: 9px; }
+    .search-baloon-info__description {
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 7px;
+      color: #444444; }
+    .search-baloon-info__name {
+      color: #de2d42; }
+    .search-baloon-info__price {
+      font-size: 13px;
+      color: #de2d42;
+      margin-bottom: 0; }
+      .search-baloon-info__price .bold {
+        font-weight: bold; }
   .search-baloon__button {
     display: -webkit-box;
     display: flex;
@@ -862,6 +885,79 @@
     color: black; }
     .search-baloon__button:not(:last-child) {
       margin-right: 10px; }
+  .search-baloon-buttons {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    margin-left: 10px; }
+    @media screen and (max-width: 720px) {
+      .search-baloon-buttons {
+        flex-wrap: wrap;
+        margin-top: 12px;
+        margin-left: auto; } }
+    .search-baloon-buttons__text {
+      font-size: 15px;
+      line-height: 1;
+      color: #757575;
+      font-style: italic;
+      margin-right: 8px;
+      font-weight: 300; }
+    .search-baloon-buttons__btn {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center;
+      box-sizing: border-box;
+      border: 1px solid #444;
+      color: #444;
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 14px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      cursor: pointer;
+      -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
+      transition: background-color 0.3s, color 0.3s, border 0.3s; }
+      .search-baloon-buttons__btn:hover {
+        background-color: #5ab55e;
+        border: 1px solid transparent;
+        color: white;
+        -webkit-transition: background-color 0.1s, color 0.1s, border 0.1s;
+        transition: background-color 0.1s, color 0.1s, border 0.1s; }
+      .search-baloon-buttons__btn.mod-minus {
+        display: none; }
+    .search-baloon-buttons__counter {
+      display: none; }
+    .search-baloon-buttons input {
+      font-size: 15px;
+      color: #5ab55e;
+      font-weight: bold;
+      width: 40px;
+      text-align: right;
+      border: none;
+      background-color: transparent; }
+    .search-baloon-buttons__unit {
+      display: none;
+      width: 40px;
+      font-size: 15px;
+      color: #5ab55e;
+      margin-left: 5px; }
 
 .mod-label {
   padding: 4px 8px;
