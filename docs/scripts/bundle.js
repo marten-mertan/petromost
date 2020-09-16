@@ -346,7 +346,7 @@ window.onload = function() {
                 $( '.js-slider-min' ).val(Number($( ".js-slider-filter" ).data('min')));
                 $( '.js-slider-max' ).val(Number($( ".js-slider-filter" ).data('max')));
                 $('.js-purchases-btn').removeClass('active');
-                $('.js-purchases-btn').first().addClass('active');
+                $('.js-purchases-buttons .js-purchases-btn:first-child').addClass('active');
                 endLoader();
             }
         })

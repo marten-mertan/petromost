@@ -2037,7 +2037,7 @@ a.show-readmore, a.hide-readmore {
     -webkit-box-pack: start;
             justify-content: flex-start;
     padding: 10px 0;
-    border-bottom: 1px solid #a9ce29;
+    border-bottom: 1px solid #5ab55e;
     margin-bottom: 13px; }
     .purchases-categories-top a {
       text-decoration: none; }
@@ -2057,7 +2057,7 @@ a.show-readmore, a.hide-readmore {
       color: white;
       padding: 8px 35px 6px 20px;
       border-radius: 4px;
-      background-color: #a9ce29;
+      background-color: #5ab55e;
       cursor: pointer; }
       .purchases-categories-top__button:not(:last-child) {
         margin-right: 20px; }
@@ -2102,7 +2102,12 @@ a.show-readmore, a.hide-readmore {
         display: flex; }
       @media screen and (max-width: 720px) {
         .purchases-categories-body-sale {
-          margin-bottom: 32px; } }
+          margin-bottom: 32px;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+                  flex-direction: column;
+          -webkit-box-align: center;
+                  align-items: center; } }
       @media screen and (max-width: 580px) {
         .purchases-categories-body-sale {
           -webkit-box-orient: vertical;
@@ -2148,7 +2153,7 @@ a.show-readmore, a.hide-readmore {
         cursor: pointer; }
       .purchases-categories-body .catalog-filter__item input.checkbox[type="checkbox"]:checked ~ span {
         font-weight: 500;
-        color: #a9ce29; }
+        color: #5ab55e; }
       .purchases-categories-body .catalog-filter__item input.checkbox[type="checkbox"]:checked ~ .checkbox {
         background-position: 0 -35px; }
       .purchases-categories-body .catalog-filter__item span.checkbox {
@@ -2156,7 +2161,7 @@ a.show-readmore, a.hide-readmore {
         width: 20px;
         min-width: 20px;
         height: 20px;
-        background: url(../assets/img/checkbox-new.png) no-repeat 0 0;
+        background: url(../assets/img/checkbox-new-green.png) no-repeat 0 0;
         margin-right: 9px; }
     .purchases-categories-body__button {
       background-color: #f3f3f3;
@@ -2173,7 +2178,7 @@ a.show-readmore, a.hide-readmore {
               transform: rotate(180deg); }
     .purchases-categories.active .purchases-categories-body {
       height: auto; }
-  .purchases-categories-sale-wrap {
+  .purchases-categories-sale-row {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -2181,6 +2186,23 @@ a.show-readmore, a.hide-readmore {
             flex-direction: row;
     -webkit-box-align: center;
             align-items: center;
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
+    .purchases-categories-sale-row:not(:last-child) {
+      margin-bottom: 10px; }
+    @media screen and (max-width: 580px) {
+      .purchases-categories-sale-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
+  .purchases-categories-sale-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
     -webkit-box-flex: 0;
             flex: 0 0 auto;
     margin-left: 30px; }
@@ -2188,7 +2210,8 @@ a.show-readmore, a.hide-readmore {
       .purchases-categories-sale-wrap {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-                flex-direction: column; } }
+                flex-direction: column;
+        margin-left: 0; } }
     @media screen and (max-width: 580px) {
       .purchases-categories-sale-wrap {
         margin-left: 0; } }
@@ -2201,7 +2224,10 @@ a.show-readmore, a.hide-readmore {
     margin-right: 20px; }
     @media screen and (max-width: 720px) {
       .purchases-categories-sale__text {
-        margin: 12px 0 20px 0; } }
+        margin: 12px 20px 20px 0; } }
+    @media screen and (max-width: 580px) {
+      .purchases-categories-sale__text {
+        margin: 12px 0 20px; } }
   .purchases-categories-sale-buttons {
     display: -webkit-box;
     display: flex;
@@ -2226,7 +2252,7 @@ a.show-readmore, a.hide-readmore {
       margin-right: 20px; }
     .purchases-categories-sale__btn.active {
       background-color: white;
-      border: 1px solid #a9ce29; }
+      border: 1px solid #5ab55e; }
   .purchases-categories-slider {
     margin: 15px 15px 25px; }
     .purchases-categories-slider-wrap {
@@ -5203,7 +5229,7 @@ a.show-readmore, a.hide-readmore {
 .ui-slider-range {
   position: absolute;
   height: 4px;
-  background: #a9ce29;
+  background: #5ab55e;
   border-radius: 2px;
   z-index: 1;
   cursor: pointer; }
@@ -5212,7 +5238,7 @@ a.show-readmore, a.hide-readmore {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: #a9ce29;
+  background: #5ab55e;
   border-radius: 50%;
   z-index: 2;
   top: -12px;
