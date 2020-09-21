@@ -173,9 +173,11 @@ window.onload = function() {
     }
     
     $('.js-minus').on('click', function(e){
+        var $this = $(this);
+        var $input = $this.parents('.js-good-item').find('.js-input');
         var result = 0;
-        var count = Math.round($(this).siblings('.js-input').val()*100) / 100;
-        var step = Math.round($(this).siblings('.js-input').data('step')*100) / 100;
+        var count = Math.round($input.val()*100) / 100;
+        var step = Math.round($input.data('step')*100) / 100;
         if (!step){
             step = 1;
             result = (count-step).toFixed();
@@ -186,7 +188,7 @@ window.onload = function() {
             $(this).parents('.js-good-item').removeClass('in-cart');
         }
         if (count > 0){
-            $(this).siblings('.js-input').val(result);
+            $input.val(result);
         }
     });
 
