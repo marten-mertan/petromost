@@ -196,10 +196,11 @@ window.onload = function() {
 
     $('.js-plus').on('click', function(e){
         var $this = $(this);
+        var $input = $this.parents('.js-good-item').find('.js-input');
         var result = 0;
-        var count = Math.round($(this).siblings('.js-input').val()*100) / 100;
-        var max = Math.round($(this).siblings('.js-input').data('max')*100) / 100;
-        var step = Math.round($(this).siblings('.js-input').data('step')*100) / 100;
+        var count = Math.round($input.val()*100) / 100;
+        var max = Math.round($input.data('max')*100) / 100;
+        var step = Math.round($input.data('step')*100) / 100;
         if (!step){
             step = 1;
             result = (count+step).toFixed();
@@ -213,7 +214,7 @@ window.onload = function() {
                     $('.js-plus').removeClass('js-for-adults');
                     $this.parents('.js-good-item').addClass('in-cart');
                     if (count < max){
-                        $this.siblings('.js-input').val(result);
+                        $input.val(result);
                     }
                 }
             }
@@ -222,7 +223,7 @@ window.onload = function() {
                 $(this).parents('.js-good-item').addClass('in-cart');
             }
             if (count < max){
-                $(this).siblings('.js-input').val(result);
+                $input.val(result);
             }
         }
     });
