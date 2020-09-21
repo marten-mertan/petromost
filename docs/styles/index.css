@@ -181,7 +181,8 @@
   .item-card__amount {
     font-size: 13px;
     line-height: 1;
-    color: #5f6269; }
+    color: #5f6269;
+    padding-right: 4px; }
   .item-card__buttons {
     display: none;
     -webkit-box-orient: horizontal;
