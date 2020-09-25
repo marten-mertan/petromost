@@ -4287,60 +4287,77 @@ a.show-readmore, a.hide-readmore {
         font-weight: bold;
         text-transform: uppercase;
         margin: 44px 0 23px; }
-    .checkout-categories-item-body-about-time-head {
-      margin-bottom: 10px; }
-      .checkout-categories-item-body-about-time-head__text {
-        font-size: 16px;
-        line-height: 16px;
-        color: #525a5f; }
-      .checkout-categories-item-body-about-time-head__option {
-        font-size: 16px;
-        line-height: 16px;
-        margin-left: 14px;
-        color: #525a5f;
-        border-bottom: 1px solid #525a5f;
-        cursor: pointer; }
-        .checkout-categories-item-body-about-time-head__option:hover {
-          color: #5ab55e;
-          border-bottom: 1px solid #5ab55e; }
-        .checkout-categories-item-body-about-time-head__option.active {
-          color: #5ab55e;
-          border-bottom: 1px solid #5ab55e; }
-    .checkout-categories-item-body-about-time-table {
-      display: none; }
-      .checkout-categories-item-body-about-time-table.active {
+    .checkout-categories-item-body-about-time {
+      margin-bottom: 14px; }
+      .checkout-categories-item-body-about-time-head {
+        margin-bottom: 10px; }
+        .checkout-categories-item-body-about-time-head__text {
+          font-size: 16px;
+          line-height: 16px;
+          color: #525a5f; }
+        .checkout-categories-item-body-about-time-head__option {
+          font-size: 16px;
+          line-height: 16px;
+          margin-left: 14px;
+          color: #525a5f;
+          border-bottom: 1px solid #525a5f;
+          cursor: pointer; }
+          .checkout-categories-item-body-about-time-head__option:hover {
+            color: #5ab55e;
+            border-bottom: 1px solid #5ab55e; }
+          .checkout-categories-item-body-about-time-head__option.active {
+            color: #5ab55e;
+            border-bottom: 1px solid #5ab55e; }
+      .checkout-categories-item-body-about-time-table {
+        display: none; }
+        .checkout-categories-item-body-about-time-table.active {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+                  flex-direction: row;
+          -webkit-box-align: center;
+                  align-items: center; }
+      .checkout-categories-item-body-about-time-option {
+        position: relative; }
+        .checkout-categories-item-body-about-time-option input {
+          position: absolute;
+          height: 0;
+          width: 0;
+          opacity: 0; }
+          .checkout-categories-item-body-about-time-option input:checked + span {
+            background-color: #5ab55e;
+            color: white; }
+          .checkout-categories-item-body-about-time-option input:disabled + span {
+            text-decoration: line-through; }
+        .checkout-categories-item-body-about-time-option span {
+          display: block;
+          font-size: 14px;
+          line-height: 14px;
+          color: #525a5f;
+          background-color: #ececec;
+          padding: 5px 14px 6px 12px;
+          border-radius: 17px;
+          margin-right: 13px;
+          -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+          text-align: center;
+          cursor: pointer; }
+      .checkout-categories-item-body-about-time-comment {
         display: -webkit-box;
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-                flex-direction: row;
-        -webkit-box-align: center;
-                align-items: center; }
-    .checkout-categories-item-body-about-time-option {
-      position: relative; }
-      .checkout-categories-item-body-about-time-option input {
-        position: absolute;
-        height: 0;
-        width: 0;
-        opacity: 0; }
-        .checkout-categories-item-body-about-time-option input:checked + span {
-          background-color: #5ab55e;
-          color: white; }
-        .checkout-categories-item-body-about-time-option input:disabled + span {
-          text-decoration: line-through; }
-      .checkout-categories-item-body-about-time-option span {
-        display: block;
-        font-size: 14px;
-        line-height: 14px;
-        color: #525a5f;
-        background-color: #ececec;
-        padding: 5px 14px 6px 12px;
-        border-radius: 17px;
-        margin-right: 13px;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        text-align: center;
-        cursor: pointer; }
+                flex-direction: row; }
+        .checkout-categories-item-body-about-time-comment__icon {
+          -webkit-box-flex: 0;
+                  flex: 0 0 auto;
+          margin-right: 10px; }
+        .checkout-categories-item-body-about-time-comment__text {
+          -webkit-box-flex: 1;
+                  flex: 1 1 auto;
+          font-size: 13px;
+          line-height: 14px; }
     .checkout-categories-item-body-details {
       display: none;
       padding: 12px 22px 9px 24px; }

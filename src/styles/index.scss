@@ -4284,6 +4284,7 @@ a.show-readmore, a.hide-readmore {
                         }
                     }
                     &-time{
+                        margin-bottom: 14px;
                         &-head{
                             margin-bottom: 10px;
                             &__text{
@@ -4349,6 +4350,19 @@ a.show-readmore, a.hide-readmore {
                                 transition: all .2s ease;
                                 text-align: center;
                                 cursor: pointer;
+                            }
+                        }
+                        &-comment{
+                            display: flex;
+                            flex-direction: row;
+                            &__icon{
+                                flex: 0 0 auto;
+                                margin-right: 10px;
+                            }
+                            &__text{
+                                flex: 1 1 auto;
+                                font-size: 13px;
+                                line-height: 14px;
                             }
                         }
                     }
