@@ -5664,3 +5664,13 @@ a.show-readmore, a.hide-readmore {
     cursor: pointer;
 }
 
+//фикс шапки для 5 временных вкладок
+.header__deliv_time{
+    width: 510px;
+}
+.header__deliv_time_table span{
+    padding: 2px 6px;
+}
+.header__deliv_time_table td{
+    padding-right: 8px;
+}
