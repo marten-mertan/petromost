@@ -52,7 +52,10 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    margin-top: auto; }
+    margin-top: auto;
+    height: 118px;
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
   .item-card__name {
     height: 48px;
     font-size: 13px;
