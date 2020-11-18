@@ -605,4 +605,14 @@ window.onload = function() {
         $(this).parents('.js-purchases-buttons').find('.js-purchases-btn').removeClass('active');
         $(this).addClass('active');
     });
+
+    $(document).on('click','.js-feedback-check', function(e){
+        if ($(this).hasClass('good-feedback')){
+            $('.js-feedback-check.bad-feedback').prop('checked', false);
+        } else {
+            if ($(this).hasClass('bad-feedback')){
+                $('.js-feedback-check.good-feedback').prop('checked', false);
+            }
+        }
+    });
 };

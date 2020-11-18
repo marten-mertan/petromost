@@ -5674,3 +5674,223 @@ a.show-readmore, a.hide-readmore {
 .header__deliv_time_table td{
     padding-right: 8px;
 }
+
+// страница обратной связи
+.feedback{
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+    @media screen and (max-width: 940px){
+        flex-direction: column;
+    }
+    &-content{
+        flex: 0 0 auto;
+        width: 580px;
+        @media screen and (max-width: 940px){
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    p{
+        margin-bottom: 10px;
+        font-weight: normal;
+        color: #414848;
+        @media screen and (max-width: 940px){
+            font-size: 16px;
+        }
+        &.mod-bold{
+            font-weight: bold;
+        }
+    }
+    h1{
+        margin-bottom: 26px;
+    }
+    .mod-attention{
+        color: #bf3043;
+        text-transform: uppercase;
+        border-bottom: 1px solid #bf3043;
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 38px;
+        @media screen and (max-width: 940px){
+            max-width: 580px;
+            margin: 30px auto 0;
+        }
+        &-top{
+            display: flex;
+            margin-bottom: 40px;
+            @media screen and (max-width: 940px){
+                margin-bottom: 20px;
+            }
+            &__text{
+                font-weight: bold;
+                color: #414848;
+                border-bottom: 1px solid #414848;
+                line-height: 20px;
+                @media screen and (max-width: 940px){
+                    width: calc(50% - 11px);
+                    border-bottom: none;
+                    text-decoration: underline;
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                &:first-child{
+                    margin-right: 100px;
+                    @media screen and (max-width: 940px){
+                        margin-right: 22px;
+                    }
+                }
+            }
+        }
+        &-body{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 0 10px;
+            margin-bottom: 30px;
+            @media screen and (max-width: 940px){
+                flex-wrap: wrap;
+                padding: 0;
+                margin-bottom: 10px;
+            }
+        }
+        &-checkbox{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+            user-select: none;  
+            cursor: pointer;
+            @media screen and (max-width: 940px){
+                width: calc(50% - 5px);
+                margin-bottom: 20px;
+            }
+            &:active{
+                .feedback-form-checkbox__icon{
+                    transform: scale(.9, .9);
+                }
+            }
+            &:not(:last-child){
+                margin-right: 10px;
+                @media screen and (max-width: 940px){
+                    margin-right: 0;
+                }
+
+            }
+            input{
+                position: absolute;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                visibility: hidden;
+                &:checked{
+                    & ~ .feedback-form-checkbox__icon{
+                        &.icon-happy{
+                            fill: #33b59c;
+                        }
+                        &.icon-sad{
+                            fill: #d80001;
+                        }
+                    }
+                }
+            }
+            &__icon{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 24px;
+                fill: #959699;
+                transition: all .15s ease;
+                @media screen and (max-width: 940px){
+                    margin-bottom: 14px;
+                }
+            }
+            &__text{
+                font-size: 13px;
+                line-height: 22px;
+                font-weight: normal;
+                color: #414848;
+                text-align: center;
+            }
+        }
+        &-button{
+            font-size: 15px;
+            line-height: 1;
+            font-weight: normal;
+            padding: 14px 70px 14px;
+            color: white;
+            background-color: #d80001;
+            border: 1px solid #d80001; 
+            border-radius: 6px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+    &-decor{
+        flex: 1 1 auto;
+        position: relative;
+        margin: 76px 0 0 30px;
+        width: 538px;
+        height: 431px;
+        @media screen and (max-width: 1170px){
+            width: 100%;
+            height: 280px;
+            margin-top: auto;
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: 940px){
+            height: 380px;
+            margin: 0;
+        }
+        @media screen and (max-width: 480px){
+            height: 260px;
+        }
+        &-picture{
+            position: absolute;
+            background: url('../assets/img/team.svg') 50% 50% no-repeat;
+            background-color: white;
+            background-size: contain;
+            width: 100%;
+            height: 65.9%;
+            bottom: 0;
+            left: 0;
+        }
+        &-baloon{
+            &-green{
+                position: absolute;
+                background: url('../assets/img/green-baloon.svg') 50% 50% no-repeat;
+                background-color: white;
+                background-size: contain;
+                width: 12.45%;
+                height: 30.86%;
+                top: 0%;
+                left: 46.65%;
+
+            }
+            &-yellow{
+                position: absolute;
+                background: url('../assets/img/yellow-baloon.svg') 50% 50% no-repeat;
+                background-color: white;
+                background-size: contain;
+                width: 19.14%;
+                height: 26.68%;
+                top: 1.62%;
+                left: 10.96%;
+
+            }
+            &-red{
+                position: absolute;
+                background: url('../assets/img/red-baloon.svg') 50% 50% no-repeat;
+                background-color: white;
+                background-size: contain;
+                width: 14.68%;
+                height: 25.75%;
+                top: 1.85%;
+                left: 81.41%;
+
+            }
+        }
+    }
+}
