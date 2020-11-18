@@ -5781,6 +5781,9 @@ a.show-readmore, a.hide-readmore {
             }
             &:first-child{
                 margin-right: 60px;
+                @media screen and (max-width: 940px){
+                    margin-right: 0;
+                }
             }
             input{
                 position: absolute;

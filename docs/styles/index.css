@@ -5698,6 +5698,9 @@ a.show-readmore, a.hide-readmore {
             margin-right: 0; } }
       .feedback-form-checkbox:first-child {
         margin-right: 60px; }
+        @media screen and (max-width: 940px) {
+          .feedback-form-checkbox:first-child {
+            margin-right: 0; } }
       .feedback-form-checkbox input {
         position: absolute;
         width: 0;
