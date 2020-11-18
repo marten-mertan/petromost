@@ -5653,7 +5653,7 @@ a.show-readmore, a.hide-readmore {
             text-align: center;
             font-size: 14px; } }
         .feedback-form-top__text:first-child {
-          margin-right: 100px; }
+          margin-right: 76px; }
           @media screen and (max-width: 940px) {
             .feedback-form-top__text:first-child {
               margin-right: 22px; } }
@@ -5696,6 +5696,8 @@ a.show-readmore, a.hide-readmore {
         @media screen and (max-width: 940px) {
           .feedback-form-checkbox:not(:last-child) {
             margin-right: 0; } }
+      .feedback-form-checkbox:first-child {
+        margin-right: 60px; }
       .feedback-form-checkbox input {
         position: absolute;
         width: 0;
@@ -5703,7 +5705,7 @@ a.show-readmore, a.hide-readmore {
         opacity: 0;
         visibility: hidden; }
         .feedback-form-checkbox input:checked ~ .feedback-form-checkbox__icon.icon-happy {
-          fill: #33b59c; }
+          fill: #5ab55e; }
         .feedback-form-checkbox input:checked ~ .feedback-form-checkbox__icon.icon-sad {
           fill: #d80001; }
       .feedback-form-checkbox__icon {

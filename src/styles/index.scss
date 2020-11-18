@@ -5738,7 +5738,7 @@ a.show-readmore, a.hide-readmore {
                 }
 
                 &:first-child{
-                    margin-right: 100px;
+                    margin-right: 76px;
                     @media screen and (max-width: 940px){
                         margin-right: 22px;
                     }
@@ -5778,7 +5778,9 @@ a.show-readmore, a.hide-readmore {
                 @media screen and (max-width: 940px){
                     margin-right: 0;
                 }
-
+            }
+            &:first-child{
+                margin-right: 60px;
             }
             input{
                 position: absolute;
@@ -5789,7 +5791,7 @@ a.show-readmore, a.hide-readmore {
                 &:checked{
                     & ~ .feedback-form-checkbox__icon{
                         &.icon-happy{
-                            fill: #33b59c;
+                            fill: #5ab55e;
                         }
                         &.icon-sad{
                             fill: #d80001;
