@@ -1,0 +1,22 @@
+.icon-star-full {
+  width: 16px;
+  height: 16px;
+  fill: #ffaf02; }
+
+.icon-star-empty {
+  width: 16px;
+  height: 16px;
+  fill: #ffaf02; }
+
+.icon-star-half {
+  width: 16px;
+  height: 16px;
+  fill: #ffaf02; }
+
+.icon-card {
+  position: relative;
+  top: 1px;
+  margin-right: 4px;
+  width: 20px;
+  height: 13px;
+  fill: #de2d42; }

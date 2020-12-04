@@ -135,6 +135,7 @@ window.onload = function() {
                 $(this).parents('.js-good-item').addClass('in-cart');
             }
             if (count < max){
+                console.log('1');
                 $input.val(result);
             }
         }
