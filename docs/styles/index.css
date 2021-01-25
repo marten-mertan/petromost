@@ -6072,3 +6072,25 @@ a.show-readmore, a.hide-readmore {
 
 .product-card .product-card__title {
   margin-bottom: 14px; }
+
+.wrapper-back {
+  background: #fff; }
+
+.profile-content-history-more-options {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+  margin-left: auto;
+  margin-right: 12px; }
+  .profile-content-history-more-options .item-card__buttons {
+    display: -webkit-box;
+    display: flex; }
+
+.profile-content-history-more-price {
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+  width: 140px; }

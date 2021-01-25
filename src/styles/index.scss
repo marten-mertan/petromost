@@ -6167,3 +6167,22 @@ a.show-readmore, a.hide-readmore {
 .product-card .product-card__title{
     margin-bottom: 14px;
 }
+
+.wrapper-back{
+    background: #fff;
+}
+
+.profile-content-history-more-options{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin-left: auto;
+    margin-right: 12px;
+    .item-card__buttons{
+        display: flex;
+    }
+}
+.profile-content-history-more-price{
+    flex: 0 0 auto;
+    width: 140px;
+}
