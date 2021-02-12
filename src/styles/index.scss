@@ -6208,10 +6208,27 @@ a.show-readmore, a.hide-readmore {
         flex-direction: row;
         align-items: center;
         text-decoration: none;
-        max-width: 280px;
-        margin-bottom: 4px;
+        width: 100%;
+        padding: 6px 15px 14px;
+        background-color: #434343;
         @media screen and (max-width: 720px){
             display: flex;
+        }
+        svg{
+            fill: #fff;
+            margin-right: 8px;
+        }
+        .header-fast-delivery__text{
+            color: #fff;
+        }
+        .header-fast-delivery__line{
+            background-color: #fff;
+            left: 16px;
+            bottom: 14px;
+            width: 280px;
+            &:after{
+                background-color: #fff;
+            }
         }
 
     }
