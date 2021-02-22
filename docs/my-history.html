@@ -43,7 +43,8 @@
     <link rel="stylesheet" href="fonts/roboto/roboto.css">
     <script src="scripts/bundle.js"></script>
     <script src="scripts/vendor/baron.js"></script>
-
+    <script src="scripts/vendor/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
     
 </head>
 
@@ -1274,167 +1275,155 @@
                             <div class="profile-content-history js-history">
                                 <h1 class="profile-content__title">История заказов</h1>
                                 <div class="profile-content-history-item js-history-item" data-id="122">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894221</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
-                                        <span class="mod-complete">выполнен</span>
+                                        <span class="mod-complete">принят</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="profile-content-history-item js-history-item" data-id="123">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894222</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
                                         <span class="mod-progress">в процессе</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="profile-content-history-item js-history-item" data-id="124">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894223</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
                                         <span class="mod-canceled">отменен</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="profile-content-history-item js-history-item" data-id="125">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894224</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
                                         <span class="mod-complete">выполнен</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1459,177 +1448,247 @@
                                     </div>
                                 </div>
                                 <div class="profile-content-history-item mod-active">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894224</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
                                         <span class="mod-complete">выполнен</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__amount">12 товаров</div>
+                                <div class="profile-content-history-tracker">
+                                    <div class="profile-content-history-tracker-wrap js-tracker">
+                                        <div class="profile-content-history-tracker-list">
+                                            <div class="profile-content-history-tracker-item js-circle-active">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Новый
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-arrow">
+                                                        <use xlink:href="icons/all.svg#icon-history-arrow"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    В обработке
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Комплектация
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Ожидает выдачи
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Выдан
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
+                                    <div class="profile-content-history-tracker-after">
                                         <div class="profile-content-history-more__allprice">Стоимость: 1500 руб</div>
                                         <div class="profile-content-history-more__profit">Выгода заказа: 758 руб</div>
                                     </div>
+                                
                                 </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
+                                <div class="profile-content-history-expander js-expander">
+                                    <div class="profile-content-history-expander-head js-expander-head">
+                                        <div class="profile-content-history-expander-head__title">
+                                            Товары
+                                        </div>
+                                        <div class="profile-content-history-expander-head__text">
+                                            (12 товаров)
+                                        </div>
+                                        <div class="profile-content-history-expander-head__arrow">
+
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                    <div class="profile-content-history-expander-body js-expander-body">
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag mod-over">
-                                                Акция закончилась
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag mod-over">
+                                                        Акция закончилась
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-comment">
+                                            <div class="profile-content-history-more-comment__label">
+                                                Комментарий к заказу
+                                            </div>
+                                            <div class="profile-content-history-more-comment__text">
+                                                Заверните заказ в 4 пакета, в 2 коробки и 1 мешок, положите еще и чеснок. Все товары взять со свежайшей датой, и не помять при доставке.
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
+                                
                                 </div>
                                 <div class="profile-content-history-more__bottom js-history-back">
                                     <div class="profile-content-history-more-item__back">
@@ -1652,7 +1711,7 @@
                             <div id="123" class="profile-content-history-more js-history-more">
                                 <div class="profile-content-history-more-item">
                                     <div class="profile-content-history-more-item__title">
-                                        <div class="profile-content-history-more-item__back  js-history-back">
+                                        <div class="profile-content-history-more-item__back js-history-back">
                                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                             <g>
@@ -1666,183 +1725,255 @@
                                             </g>
                                             </svg>
                                         </div>
-                                        #5556894222
+                                        #5556894221
                                     </div>
                                 </div>
                                 <div class="profile-content-history-item mod-active">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894224</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
-                                        <span class="mod-complete">выполнен</span>
+                                        <span class="mod-progress">в процессе</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__amount">12 товаров</div>
+                                <div class="profile-content-history-tracker">
+                                    <div class="profile-content-history-tracker-wrap js-tracker">
+                                        <div class="profile-content-history-tracker-list">
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Новый
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-check">
+                                                        <use xlink:href="icons/all.svg#icon-history-check"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item js-circle-active">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    В обработке
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-arrow">
+                                                        <use xlink:href="icons/all.svg#icon-history-arrow"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Комплектация
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Ожидает выдачи
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Выдан
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
+                                    <div class="profile-content-history-tracker-after">
                                         <div class="profile-content-history-more__allprice">Стоимость: 1500 руб</div>
                                         <div class="profile-content-history-more__profit">Выгода заказа: 758 руб</div>
                                     </div>
+                                
                                 </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
+                                <div class="profile-content-history-expander js-expander">
+                                    <div class="profile-content-history-expander-head js-expander-head">
+                                        <div class="profile-content-history-expander-head__title">
+                                            Товары
+                                        </div>
+                                        <div class="profile-content-history-expander-head__text">
+                                            (12 товаров)
+                                        </div>
+                                        <div class="profile-content-history-expander-head__arrow">
+
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                    <div class="profile-content-history-expander-body js-expander-body">
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag mod-over">
-                                                Акция закончилась
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag mod-over">
+                                                        Акция закончилась
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-comment">
+                                            <div class="profile-content-history-more-comment__label">
+                                                Комментарий к заказу
+                                            </div>
+                                            <div class="profile-content-history-more-comment__text">
+                                                Заверните заказ в 4 пакета, в 2 коробки и 1 мешок, положите еще и чеснок. Все товары взять со свежайшей датой, и не помять при доставке.
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
+                                
                                 </div>
-                                <div class="profile-content-history-more__bottom  js-history-back">
+                                <div class="profile-content-history-more__bottom js-history-back">
                                     <div class="profile-content-history-more-item__back">
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -1877,181 +2008,262 @@
                                             </g>
                                             </svg>
                                         </div>
-                                        #5556894223
+                                        #5556894221
                                     </div>
                                 </div>
                                 <div class="profile-content-history-item mod-active">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894224</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
-                                        <span class="mod-complete">выполнен</span>
+                                        <span class="mod-canceled">отменен</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__amount">12 товаров</div>
+                                <div class="profile-content-history-tracker">
+                                    <div class="profile-content-history-tracker-wrap js-tracker">
+                                        <div class="profile-content-history-tracker-list">
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Новый
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-check">
+                                                        <use xlink:href="icons/all.svg#icon-history-check"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    В обработке
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-arrow">
+                                                        <use xlink:href="icons/all.svg#icon-history-arrow"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="profile-content-history-tracker-item-cancel">
+                                                    <div class="profile-content-history-tracker-item-cancel__circle">
+                                                        <svg class="icon-history-close">
+                                                            <use xlink:href="icons/all.svg#icon-history-close"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="profile-content-history-tracker-item-cancel__text">
+                                                        Отмена заказа
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-tracker-item js-circle-active">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Комплектация
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Ожидает выдачи
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Выдан
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
+                                    <div class="profile-content-history-tracker-after">
                                         <div class="profile-content-history-more__allprice">Стоимость: 1500 руб</div>
                                         <div class="profile-content-history-more__profit">Выгода заказа: 758 руб</div>
                                     </div>
+                                
                                 </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
+                                <div class="profile-content-history-expander js-expander">
+                                    <div class="profile-content-history-expander-head js-expander-head">
+                                        <div class="profile-content-history-expander-head__title">
+                                            Товары
+                                        </div>
+                                        <div class="profile-content-history-expander-head__text">
+                                            (12 товаров)
+                                        </div>
+                                        <div class="profile-content-history-expander-head__arrow">
+
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                    <div class="profile-content-history-expander-body js-expander-body">
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag mod-over">
-                                                Акция закончилась
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag mod-over">
+                                                        Акция закончилась
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-comment">
+                                            <div class="profile-content-history-more-comment__label">
+                                                Комментарий к заказу
+                                            </div>
+                                            <div class="profile-content-history-more-comment__text">
+                                                Заверните заказ в 4 пакета, в 2 коробки и 1 мешок, положите еще и чеснок. Все товары взять со свежайшей датой, и не помять при доставке.
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
+                                
                                 </div>
                                 <div class="profile-content-history-more__bottom js-history-back">
                                     <div class="profile-content-history-more-item__back">
@@ -2088,181 +2300,259 @@
                                             </g>
                                             </svg>
                                         </div>
-                                        #5556894224
+                                        #5556894221
                                     </div>
                                 </div>
                                 <div class="profile-content-history-item mod-active">
-                                    <div class="profile-content-history-item-date">
-                                        <span class="profile-content-history-item__label">Дата</span>
-                                        <span>12.03.19г</span>
-                                    </div>
-                                    <div class="profile-content-history-item-time">
-                                        <span class="profile-content-history-item__label">Время</span>
-                                        <span>15:30 - 18:30</span>
-                                    </div>
-                                    <div class="profile-content-history-item-number">
-                                        <span class="profile-content-history-item__label">Номер заказа</span>
-                                        <span>#5556894224</span>
+                                    <div class="profile-content-history-item-info">
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Номер заказа:</span>
+                                            <span>#5556894221</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Дата и время доставки:</span>
+                                            <span>завтра, 01.01.2021, 23:00:00</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Сумма:</span>
+                                            <span>1 699, 59 р.</span>
+                                        </div>
+                                        <div class="profile-content-history-item-text">
+                                            <span class="mod-bold">Вид оплаты:</span>
+                                            <span>онлайн оплата на сайте</span>
+                                        </div>
                                     </div>
                                     <div class="profile-content-history-item-status">
-                                        <span class="profile-content-history-item__label mod-center">Статус</span>
                                         <span class="mod-complete">выполнен</span>
                                     </div>
-                                    <div class="profile-content-history-item-repeat js-history-repeat">
-                                        <span class="mod-repeat">Повторить</span>
-                                    </div>
-                                    <div class="profile-content-history-item-close js-history-delete">
-                                        <span class="profile-content-history-item__label mod-delete">Удалить</span>
-                                        <svg version="1.1" id="Capa_1" height="19px" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 486.4 486.4" style="enable-background:new 0 0 486.4 486.4;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M446,70H344.8V53.5c0-29.5-24-53.5-53.5-53.5h-96.2c-29.5,0-53.5,24-53.5,53.5V70H40.4c-7.5,0-13.5,6-13.5,13.5
-                                                    S32.9,97,40.4,97h24.4v317.2c0,39.8,32.4,72.2,72.2,72.2h212.4c39.8,0,72.2-32.4,72.2-72.2V97H446c7.5,0,13.5-6,13.5-13.5
-                                                    S453.5,70,446,70z M168.6,53.5c0-14.6,11.9-26.5,26.5-26.5h96.2c14.6,0,26.5,11.9,26.5,26.5V70H168.6V53.5z M394.6,414.2
-                                                    c0,24.9-20.3,45.2-45.2,45.2H137c-24.9,0-45.2-20.3-45.2-45.2V97h302.9v317.2H394.6z"/>
-                                                <path d="M243.2,411c7.5,0,13.5-6,13.5-13.5V158.9c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v238.5
-                                                    C229.7,404.9,235.7,411,243.2,411z"/>
-                                                <path d="M155.1,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C141.6,390.1,147.7,396.1,155.1,396.1z"/>
-                                                <path d="M331.3,396.1c7.5,0,13.5-6,13.5-13.5V173.7c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v208.9
-                                                    C317.8,390.1,323.8,396.1,331.3,396.1z"/>
-                                            </g>
-                                        </g>
-                                        </svg>
+                                    <div class="profile-content-history-item-options">
+                                        
+                                        <div class="profile-content-history-item-repeat js-history-repeat">
+                                            <svg class="icon-history-refresh">
+                                                <use xlink:href="icons/all.svg#icon-history-refresh"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Повторить</span>
+                                        </div>
+                                        <div class="profile-content-history-item-close js-history-delete">
+                                            <svg class="icon-history-delete">
+                                                <use xlink:href="icons/all.svg#icon-history-delete"/>
+                                            </svg>
+                                            <span class="profile-content-history-item-subtext">Удалить</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__amount">12 товаров</div>
+                                <div class="profile-content-history-tracker">
+                                    <div class="profile-content-history-tracker-wrap js-tracker">
+                                        <div class="profile-content-history-tracker-list">
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Новый
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-check">
+                                                        <use xlink:href="icons/all.svg#icon-history-check"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    В обработке
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-check">
+                                                        <use xlink:href="icons/all.svg#icon-history-check"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Комплектация
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-check">
+                                                        <use xlink:href="icons/all.svg#icon-history-check"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Ожидает выдачи
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-check">
+                                                        <use xlink:href="icons/all.svg#icon-history-check"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="profile-content-history-tracker-item js-circle-active">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Выдан
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle">
+                                                    <svg class="icon-history-check">
+                                                        <use xlink:href="icons/all.svg#icon-history-check"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
+                                    <div class="profile-content-history-tracker-after">
                                         <div class="profile-content-history-more__allprice">Стоимость: 1500 руб</div>
                                         <div class="profile-content-history-more__profit">Выгода заказа: 758 руб</div>
                                     </div>
+                                
                                 </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
+                                <div class="profile-content-history-expander js-expander">
+                                    <div class="profile-content-history-expander-head js-expander-head">
+                                        <div class="profile-content-history-expander-head__title">
+                                            Товары
+                                        </div>
+                                        <div class="profile-content-history-expander-head__text">
+                                            (12 товаров)
+                                        </div>
+                                        <div class="profile-content-history-expander-head__arrow">
+
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                    <div class="profile-content-history-expander-body js-expander-body">
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag mod-over">
-                                                Акция закончилась
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more__category">Кофе, чай</div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag">
-                                                Только неделю
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
-                                </div>
-                                <div class="profile-content-history-more-row">
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="profile-content-history-more-left">
-                                        <div class="profile-content-history-more__description">
-                                            <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
-                                            <div class="cart-new-category-item-info__tag-sale">
-                                                <div class="cart-new-category-item-info__tag-sale-left">
-                                                    Цена по карте
-                                                </div>
-                                                <div class="cart-new-category-item-info__tag-sale-right">
-                                                    -17%
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag mod-over">
+                                                        Акция закончилась
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more__category">Кофе, чай</div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag">
+                                                        Только неделю
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-row">
+                                            <div class="profile-content-history-more-left">
+                                                <div class="profile-content-history-more__img" style="background-image: url(assets/img/profile/item-1.png);">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-info">
+                                                <div class="profile-content-history-more__description">
+                                                    <p class="cart-new-category-item-info__name">Кофе Жардин Коламбия Меделин нат.раств.суб.ст /б95г</p>
+                                                    <div class="cart-new-category-item-info__tag-sale">
+                                                        <div class="cart-new-category-item-info__tag-sale-left">
+                                                            Цена по карте
+                                                        </div>
+                                                        <div class="cart-new-category-item-info__tag-sale-right">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-content-history-more-right">
+                                                <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
+                                                <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-content-history-more-comment">
+                                            <div class="profile-content-history-more-comment__label">
+                                                Комментарий к заказу
+                                            </div>
+                                            <div class="profile-content-history-more-comment__text">
+                                                Заверните заказ в 4 пакета, в 2 коробки и 1 мешок, положите еще и чеснок. Все товары взять со свежайшей датой, и не помять при доставке.
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="profile-content-history-more-right">
-                                        <div class="profile-content-history-more__discount">Скидка: 7 руб</div>
-                                        <div class="profile-content-history-more__price">3 шт ; 500 руб</div>
-                                    </div>
+                                
                                 </div>
                                 <div class="profile-content-history-more__bottom js-history-back">
                                     <div class="profile-content-history-more-item__back">
@@ -2595,7 +2885,6 @@
     <!--<script src="--><!--/js/readmore.js"></script>-->
     <script src="scripts_old/new-scripts.js"></script>
     <script src="scripts_old/product-card.js"></script>
-
     <script>
 
 

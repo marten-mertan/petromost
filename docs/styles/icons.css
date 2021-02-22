@@ -25,3 +25,31 @@
   width: 32px;
   height: 32px;
   fill: #de2d42; }
+
+.icon-history-delete {
+  width: 20px;
+  height: 20px;
+  fill: #414848; }
+
+.icon-history-refresh {
+  width: 19px;
+  height: 20px;
+  fill: #414848; }
+
+.icon-history-check {
+  width: 16px;
+  height: 14px;
+  fill: #fff; }
+
+.icon-history-arrow {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+  padding: 3px 3px 0px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.icon-history-close {
+  width: 12px;
+  height: 12px;
+  fill: #fff; }
