@@ -3279,6 +3279,10 @@ a.show-readmore, a.hide-readmore {
                 background-color: white;
                 transition: all 0.2s ease;
                 cursor: pointer;
+                &:not(:last-child){
+                    border-bottom: 1px solid #f3f3f3;
+
+                }
                 @media screen and (max-width: 1170px){
                     padding: 22px 12px 22px 10px;
                 }
@@ -3286,7 +3290,6 @@ a.show-readmore, a.hide-readmore {
                     padding: 22px 18px 22px 10px;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    border-bottom: 1px solid #f3f3f3;
                 }
                 &:hover{
                     background-color: #f3f3f3;

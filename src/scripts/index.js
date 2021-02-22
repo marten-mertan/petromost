@@ -624,6 +624,4 @@ window.onload = function() {
         $(this).parents('.js-expander').toggleClass('hide');
         $(this).parents('.js-expander').find('.js-expander-body').slideToggle();
     });
-
-    $('.js-tracker').scrollLeft(500);
 };

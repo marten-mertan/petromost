@@ -3389,6 +3389,8 @@ a.show-readmore, a.hide-readmore {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
       cursor: pointer; }
+      .profile-content-history-item:not(:last-child) {
+        border-bottom: 1px solid #f3f3f3; }
       @media screen and (max-width: 1170px) {
         .profile-content-history-item {
           padding: 22px 12px 22px 10px; } }
@@ -3397,8 +3399,7 @@ a.show-readmore, a.hide-readmore {
           padding: 22px 18px 22px 10px;
           flex-wrap: wrap;
           -webkit-box-pack: justify;
-                  justify-content: space-between;
-          border-bottom: 1px solid #f3f3f3; } }
+                  justify-content: space-between; } }
       .profile-content-history-item:hover {
         background-color: #f3f3f3; }
         .profile-content-history-item:hover .profile-content-history-item__label {
