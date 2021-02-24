@@ -3632,7 +3632,7 @@ a.show-readmore, a.hide-readmore {
           top: -12px;
           left: 3px;
           padding: 5px;
-          font-family: "Roboto Medium", sans-serif;
+          font-weight: 500;
           font-size: 14px;
           color: #232833;
           line-height: 1; }
@@ -3776,8 +3776,8 @@ a.show-readmore, a.hide-readmore {
         .profile-content-history-tracker-item:first-child .profile-content-history-tracker-item__circle:before {
           width: 56px; }
         .profile-content-history-tracker-item__name {
-          font-family: "Roboto Medium";
           font-size: 18px;
+          font-weight: 500;
           color: #232833;
           line-height: 1;
           text-align: center; }
