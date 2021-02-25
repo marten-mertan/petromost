@@ -2764,8 +2764,13 @@ a.show-readmore, a.hide-readmore {
     &-content{
         flex: 1 1 auto;
         margin-bottom: 12px;
+        width: calc(100% - 340px);
         @media screen and (max-width: 1170px){
+            width: calc(100% - 300px);
             overflow: hidden;
+        }
+        @media screen and (max-width: 870px){
+            width: 100%;
         }
         h1{
             font-size: 25px;
@@ -3648,6 +3653,9 @@ a.show-readmore, a.hide-readmore {
                     position: relative;
                     padding-left: 25px;
                     overflow-x: auto;
+                    ::-webkit-scrollbar { /* for Mac OS X support */
+                        width: 0;
+                    }
                     @media screen and (max-width: 1170px){
                         padding: 0 18px 0 10px;
                     }
@@ -6559,4 +6567,30 @@ a.show-readmore, a.hide-readmore {
 
         }
     }
+}
+
+.baron-tracker__scroller {
+    max-height: 120px !important;
+    min-height: 120px !important;
+    position: relative;
+}
+
+.baron-tracker__track {
+    height: 6px;
+    width: calc(100% - 50px);
+    background: #f2f2f2;
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 6px;
+
+}
+
+.baron-tracker__bar {
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    top: 1px;
+    z-index: 1;
+    background: #a0b2bd;
 }

@@ -60,6 +60,7 @@
     <link rel="stylesheet" href="fonts/roboto/roboto.css">
     <script src="scripts/bundle.js"></script>
     <script src="scripts/vendor/baron.js"></script>
+    <script src="scripts/vendor/jquery.mCustomScrollbar.min.js"></script>
     <script src="scripts/vendor/svg4everybody.min.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>
     {# <script type="text/javascript">!function () {
@@ -2101,8 +2102,8 @@
                                     </div>
                                 </div>
                                 <div class="profile-content-history-tracker">
-                                    <div class="profile-content-history-tracker-wrap js-tracker">
-                                        <div class="profile-content-history-tracker-list">
+                                    <div class="profile-content-history-tracker-wrap js-tracker js-tracker-scroll">
+                                        <div class="profile-content-history-tracker-list baron-tracker__scroller">
                                             <div class="profile-content-history-tracker-item">
                                                 <div class="profile-content-history-tracker-item__name">
                                                     Новый
@@ -2187,14 +2188,24 @@
 
                                                 </div>
                                             </div>
+                                            <div class="profile-content-history-tracker-item">
+                                                <div class="profile-content-history-tracker-item__name">
+                                                    Завершен
+                                                </div>
+                                                <div class="profile-content-history-tracker-item__circle mod-empty">
+
+                                                </div>
+                                            </div>
                                         
+                                        </div>
+                                        <div class="baron-tracker__track">
+                                            <div class="baron-tracker__bar"></div>
                                         </div>
                                     </div>
                                     <div class="profile-content-history-tracker-after">
                                         <div class="profile-content-history-more__allprice">Стоимость: 1500 руб</div>
                                         <div class="profile-content-history-more__profit">Выгода заказа: 758 руб</div>
                                     </div>
-                                
                                 </div>
                                 <div class="profile-content-history-expander js-expander">
                                     <div class="profile-content-history-expander-head js-expander-head">

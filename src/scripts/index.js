@@ -624,4 +624,13 @@ window.onload = function() {
         $(this).parents('.js-expander').toggleClass('hide');
         $(this).parents('.js-expander').find('.js-expander-body').slideToggle();
     });
+
+    if ($('.js-tracker-scroll').length){
+        window.dima = $('.js-tracker-scroll').baron({
+            direction: 'h',
+            root: '.js-tracker-scroll',
+            scroller: '.baron-tracker__scroller',
+            bar: '.baron-tracker__bar'
+        }).autoUpdate(); 
+    }
 };
