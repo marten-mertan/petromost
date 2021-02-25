@@ -3653,9 +3653,6 @@ a.show-readmore, a.hide-readmore {
                     position: relative;
                     padding-left: 25px;
                     overflow-x: auto;
-                    ::-webkit-scrollbar { /* for Mac OS X support */
-                        width: 0;
-                    }
                     @media screen and (max-width: 1170px){
                         padding: 0 18px 0 10px;
                     }
@@ -6569,9 +6566,15 @@ a.show-readmore, a.hide-readmore {
     }
 }
 
+.js-tracker-scroll{
+    max-height: 123px !important;
+    min-height: 123px !important;
+
+}
 .baron-tracker__scroller {
-    max-height: 120px !important;
-    min-height: 120px !important;
+    max-height: 140px !important;
+    min-height: 140px !important;
+    padding-bottom: 60px;
     position: relative;
 }
 

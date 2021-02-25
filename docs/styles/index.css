@@ -3756,9 +3756,6 @@ a.show-readmore, a.hide-readmore {
         position: relative;
         padding-left: 25px;
         overflow-x: auto; }
-        .profile-content-history-tracker-wrap ::-webkit-scrollbar {
-          /* for Mac OS X support */
-          width: 0; }
         @media screen and (max-width: 1170px) {
           .profile-content-history-tracker-wrap {
             padding: 0 18px 0 10px; } }
@@ -6489,9 +6486,14 @@ a.show-readmore, a.hide-readmore {
       border-radius: 50%;
       z-index: 3; }
 
+.js-tracker-scroll {
+  max-height: 123px !important;
+  min-height: 123px !important; }
+
 .baron-tracker__scroller {
-  max-height: 120px !important;
-  min-height: 120px !important;
+  max-height: 140px !important;
+  min-height: 140px !important;
+  padding-bottom: 60px;
   position: relative; }
 
 .baron-tracker__track {
