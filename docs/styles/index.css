@@ -6611,3 +6611,44 @@ a.show-readmore, a.hide-readmore {
   text-align: center;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
+
+.header-top-mobile {
+  display: none;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #f3f3f3;
+  padding: 3px 6px 3px 16px;
+  margin-left: -10px;
+  margin-right: -10px; }
+  @media (max-width: 720px) {
+    .header-top-mobile {
+      display: -webkit-box;
+      display: flex; } }
+  .header-top-mobile-col {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+            align-items: center; }
+  .header-top-mobile-logo {
+    margin-right: 12px; }
+    .header-top-mobile-logo img {
+      display: block; }
+    .header-top-mobile-logo-text {
+      margin-right: 12px; }
+      .header-top-mobile-logo-text img {
+        display: block; }
+  .header-top-mobile-status {
+    padding: 12px 9px; }
+    .header-top-mobile-status svg {
+      width: 17px;
+      height: 17px;
+      fill: #585f67;
+      stroke: #585f67;
+      stroke-width: 8; }

@@ -6689,3 +6689,47 @@ a.show-readmore, a.hide-readmore {
         transition: all .2s ease;
     }
 }
+
+.header-top-mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 3px 6px 3px 16px;
+    margin-left: -10px;
+    margin-right: -10px;
+    @media (max-width: 720px) {
+        display: flex;
+    }
+    &-col {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &-logo {
+        margin-right: 12px;
+
+        img {
+            display: block;
+        }
+        &-text {
+            margin-right: 12px;
+
+            img {
+                display: block;
+            }
+
+        }
+    }
+    &-status {
+        padding: 12px 9px;
+        svg {
+            width: 17px;
+            height: 17px;
+            fill: #585f67;
+            stroke: #585f67;
+            stroke-width: 8;
+        }
+    }
+}
