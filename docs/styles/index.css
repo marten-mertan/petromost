@@ -373,6 +373,18 @@
   height: 12px;
   fill: #fff; }
 
+.icon-header-time {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: #353f45; }
+
+.icon-header-user {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: #353f45; }
+
 .header {
   background: none; }
   .header__decor-1 {
@@ -473,7 +485,7 @@
       padding: 0; }
   .header .header__menu {
     background: none;
-    top: 120px; }
+    top: 128px; }
     @media screen and (max-width: 1170px) {
       .header .header__menu {
         top: 170px; } }
@@ -696,10 +708,13 @@
   .selectSite .destop {
     display: -webkit-box;
     display: flex;
+    -webkit-box-align: center;
+            align-items: center;
     position: relative;
     margin: 0 auto;
-    padding: 16px 0 17px;
+    padding: 7px 0 5px;
     width: 1148px;
+    font-size: 14px;
     color: #525a5f; }
     @media screen and (max-width: 1170px) {
       .selectSite .destop {
@@ -707,7 +722,7 @@
     @media screen and (max-width: 940px) {
       .selectSite .destop {
         width: auto;
-        padding: 16px 10px 17px; } }
+        padding: 7px 10px 5px; } }
     @media screen and (max-width: 720px) {
       .selectSite .destop {
         display: none; } }
@@ -1032,13 +1047,16 @@
   background-color: white;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 322px;
   z-index: 1000;
   padding: 20px 20px 30px;
   box-sizing: border-box;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.27);
   border-radius: 20px;
   width: 390px; }
+  @media screen and (max-width: 1170px) {
+    .baloon-select-city {
+      left: 252px; } }
   .baloon-select-city.active {
     display: block; }
   .baloon-select-city-top {
@@ -6402,8 +6420,8 @@ a.show-readmore, a.hide-readmore {
 
 .header-fast-delivery {
   position: absolute;
-  top: 76px;
-  left: 328px;
+  top: 82px;
+  left: 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -6512,3 +6530,84 @@ a.show-readmore, a.hide-readmore {
   top: 1px;
   z-index: 1;
   background: #a0b2bd; }
+
+.selectSite .destop a.header-top-logo {
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 0;
+  margin: -5px 10px -13px 0; }
+  .selectSite .destop a.header-top-logo:after {
+    display: none; }
+
+.selectSite .destop a.header-top-logo-text {
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 0;
+  margin: 0 86px 0 0; }
+  @media screen and (max-width: 1170px) {
+    .selectSite .destop a.header-top-logo-text {
+      margin: 0 10px 0 0; } }
+  .selectSite .destop a.header-top-logo-text:after {
+    display: none; }
+
+.selectSite .destop a.header-new-status {
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 0;
+  margin-left: auto; }
+  @media screen and (max-width: 1170px) {
+    .selectSite .destop a.header-new-status {
+      margin-left: auto; } }
+  .selectSite .destop a.header-new-status:after {
+    display: none; }
+
+.selectSite .destop a.header-new-auth {
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 0;
+  margin-left: 34px;
+  margin-right: 0; }
+  @media screen and (max-width: 1170px) {
+    .selectSite .destop a.header-new-auth {
+      margin-left: 12px; } }
+  .selectSite .destop a.header-new-auth:after {
+    display: none; }
+
+.header-new-status {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center; }
+  .header-new-status:hover .header-new-text {
+    opacity: .7; }
+  .header-new-status:hover .header-new-icon {
+    opacity: .7; }
+
+.header-new-auth {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center; }
+  .header-new-auth:hover .header-new-text {
+    opacity: .7; }
+  .header-new-auth:hover .header-new-icon {
+    opacity: .7; }
+
+.header-new-icon {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 2px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+
+.header-new-text {
+  font-size: 14px;
+  text-align: center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
