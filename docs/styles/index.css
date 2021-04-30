@@ -391,6 +391,12 @@
   height: 16px;
   fill: #353f45; }
 
+.icon-check {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  fill: #232833; }
+
 .header {
   background: none; }
   .header__decor-1 {
@@ -3787,7 +3793,8 @@ a.show-readmore, a.hide-readmore {
       .profile-content-history-tracker-wrap {
         position: relative;
         padding-left: 25px;
-        overflow-x: auto; }
+        overflow-x: auto;
+        border-bottom: 1px solid #e8e8e8; }
         @media screen and (max-width: 1170px) {
           .profile-content-history-tracker-wrap {
             padding: 0 18px 0 10px; } }
@@ -3888,16 +3895,45 @@ a.show-readmore, a.hide-readmore {
             text-align: center;
             width: 50px; }
       .profile-content-history-tracker-after {
+        -webkit-box-flex: 0;
+                flex: 0 0 auto;
         display: -webkit-box;
         display: flex;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-                flex-direction: column;
-        margin-left: auto;
-        padding: 0 25px; }
+                flex-direction: row;
+        -webkit-box-pack: end;
+                justify-content: flex-end;
+        padding: 30px 25px 0;
+        text-decoration: none; }
         @media screen and (max-width: 1170px) {
           .profile-content-history-tracker-after {
-            padding: 0 18px 0 10px; } }
+            padding: 22px 18px 0 10px; } }
+        .profile-content-history-tracker-after-price {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+                  flex-direction: column; }
+        .profile-content-history-tracker-after-check {
+          -webkit-box-flex: 0;
+                  flex: 0 0 auto;
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+                  flex-direction: column;
+          -webkit-box-align: center;
+                  align-items: center;
+          margin-left: 40px; }
+          @media screen and (max-width: 1170px) {
+            .profile-content-history-tracker-after-check {
+              margin-left: 20px; } }
+          .profile-content-history-tracker-after-check__text {
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: #232833; }
     .profile-content-history-expander {
       background-color: white;
       box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.17); }

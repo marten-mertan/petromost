@@ -3667,6 +3667,7 @@ a.show-readmore, a.hide-readmore {
                     position: relative;
                     padding-left: 25px;
                     overflow-x: auto;
+                    border-bottom: 1px solid #e8e8e8;
                     @media screen and (max-width: 1170px){
                         padding: 0 18px 0 10px;
                     }
@@ -3765,12 +3766,38 @@ a.show-readmore, a.hide-readmore {
                     }
                 }
                 &-after{
+                    flex: 0 0 auto;
                     display: flex;
-                    flex-direction: column;
-                    margin-left: auto;
-                    padding: 0 25px;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    padding: 30px 25px 0;
+                    text-decoration: none;
                     @media screen and (max-width: 1170px){
-                        padding: 0 18px 0 10px;
+                        padding: 22px 18px 0 10px;
+                    }
+                    &-price {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    &-check {
+                        flex: 0 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-left: 40px;
+                        @media screen and (max-width: 1170px){
+                            margin-left: 20px;
+                        }
+                        &__icon {
+
+                        }
+                        &__text {
+                            font-size: 13px;
+                            line-height: 16px;
+                            text-align: center;
+                            color: #232833;
+                        }
+
                     }
                 }
             }
