@@ -46,8 +46,7 @@
   height: 14px;
   fill: #fff;
   padding: 3px 3px 0px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg); }
+  transform: rotate(45deg); }
 
 .icon-history-close {
   width: 12px;

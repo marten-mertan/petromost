@@ -1,7 +1,8 @@
 .pies__welcome {
   display: block;
   text-decoration: none !important;
-  text-align: center; }
+  text-align: center;
+  line-height: 1; }
   .pies__welcome img {
     display: none;
     max-width: 100%; }
@@ -26,8 +27,11 @@
     margin-top: 0; }
 
 .pies__image {
+  display: block;
   margin-bottom: 35px;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none !important;
+  line-height: 1; }
   .pies__image img {
     max-width: 100%; }
 
@@ -36,6 +40,9 @@
   font-size: 22px !important;
   font-weight: 700 !important;
   color: #414848 !important; }
+  .pies__title a {
+    text-decoration: none !important;
+    color: #414848; }
 
 .pies__props {
   display: flex;

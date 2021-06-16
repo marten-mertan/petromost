@@ -4,6 +4,7 @@
         display: block;
         text-decoration: none !important;
         text-align: center;
+        line-height: 1;
 
         img {
             display: none;
@@ -40,8 +41,11 @@
     }
 
     &__image {
+        display: block;
         margin-bottom: 35px;
         text-align: center;
+        text-decoration: none !important;
+        line-height: 1;
 
         img {
             max-width: 100%;
@@ -53,6 +57,11 @@
         font-size: 22px !important;
         font-weight: 700 !important;
         color: #414848 !important;
+
+        a {
+            text-decoration: none !important;
+            color: #414848;
+        }
     }
 
     &__props {
