@@ -92,7 +92,7 @@ function buildAssets(cb) {
 // Отслеживание
 function watchFiles() {
     watch(['src/pages/*.twig', 'src/pages/*.html', 'src/components/**/*.twig'], buildPages);
-    watch(['src/styles/*.css','src/styles/*.scss', 'src/components/**/*.scss'], buildStyles);
+    watch(['src/styles/*.css','src/styles/**/*.scss', 'src/components/**/*.scss'], buildStyles);
     watch('src/scripts/**/*.js', buildScripts);
     watch('src/assets/**/*.*', buildAssets);
 
